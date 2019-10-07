@@ -59,4 +59,31 @@ interface Factory {
 	 * @return \ILIAS\UI\Component\Popover\Listing
 	 */
 	public function listing($items);
+
+	/**
+	 * ---
+	 * description:
+	 *   purpose:  >
+	 *     1: Tooltips are designed for clarifications or tips to be shown.
+	 *     2: Tooltips can be used e.g. to give information for a correct
+	 *      input value of a form element or to display additional usage information.
+	 *   composition: >
+	 *      Tooltip Popover will display a text without a title
+	 *
+	 * rules:
+	 *   usage:
+	 *     1:  >
+	 *         Tooltips do not contain any scrollbars.
+	 *   interaction:
+	 *     1:  >
+	 *         The Tooltip must be displayed only if the trigger component is hovered or clicked.
+	 *     2:  >
+	 *         The Tooltip must not be displayed when the trigger ic clicked a second time or the user is no longer hovering over the trigger.
+	 *   style:
+	 *     1: A Tooltip always related to the trigger component with a little pointer
+	 * ---
+	 * @param   string $content
+	 * @return \ILIAS\UI\Component\Popover\Tooltip
+	 **/
+	public function tooltip($content);
 }

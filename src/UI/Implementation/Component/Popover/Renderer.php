@@ -77,9 +77,11 @@ class Renderer extends AbstractComponentRenderer {
 		} else {
 			if ($popover instanceof Component\Popover\Listing) {
 				return $this->renderListingPopover($popover, $default_renderer, $id);
+			} else
+				if ($popover instanceof Component\Popover\Tooltip) {
+					return $this->renderTooltipPopover($popover, $default_renderer, $id);
 			}
 		}
-
 		return '';
 	}
 
@@ -125,6 +127,14 @@ class Renderer extends AbstractComponentRenderer {
 			$tpl->setVariable('ITEM', $default_renderer->render($item));
 			$tpl->parseCurrentBlock();
 		}
+
+		return $tpl->get();
+	}
+
+	protected function renderTooltipPopover(Component\Popover\Tooltip $popover, RendererInterface $default_renderer, $id) {
+		$tpl = $this->getTemplate('tpl.tooltip-popover-content.html', true, true);
+		$tpl->setVariable('ID', $id);
+		$tpl->setVariable('CONTENT', $default_renderer->render($popover->getContent()));
 
 		return $tpl->get();
 	}

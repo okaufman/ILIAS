@@ -207,6 +207,15 @@ class Factory implements \ILIAS\UI\Factory
 	/**
 	 * @inheritdoc
 	 */
+	public function tooltip()
+	{
+		return $this->tooltip_factory;
+	}
+
+
+	/**
+	 * @inheritdoc
+	 */
 	public function image()
 	{
 		return $this->image_factory;

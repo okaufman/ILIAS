@@ -41,4 +41,11 @@ class Factory implements \ILIAS\UI\Component\Popover\Factory {
 	public function listing($items) {
 		return new Listing($items, $this->signal_generator);
 	}
+
+	/**
+	 * @inheritdoc
+	 */
+	public function tooltip($content) {
+		return new Listing($content, $this->signal_generator);
+	}
 }
