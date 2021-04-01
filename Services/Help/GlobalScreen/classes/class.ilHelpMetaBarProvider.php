@@ -52,7 +52,7 @@ class ilHelpMetaBarProvider extends AbstractStaticMetaBarProvider implements Sta
                        ->withTitle($title)
                        ->withPosition(0);
 
-            return [$item];
+            return [];
         }
 
         return [];
