@@ -84,7 +84,7 @@ class ilStudyProgrammeDashboardViewGUI
             krsort($assignments);
             /** @var ilStudyProgrammeUserAssignment $current */
             $current = current($assignments);
-            if (true || !$this->isReadable($current)) {
+            if (!$this->isReadable($current)) {
                 continue;
             }
 
