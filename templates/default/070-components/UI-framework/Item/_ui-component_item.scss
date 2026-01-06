@@ -12,8 +12,8 @@ $il-item-divider-padding: 10px 0 0 0;
 $il-item-divider-margin: 0 0 10px 0;
 $il-item-divider-border-bottom: dashed 0.5px $il-main-border-color;
 $il-item-description-padding: 10px 0 0 0;
-$il-item-audio-padding: $il-padding-large-vertical 0;
-$il-item-padding: $il-padding-xlarge-horizontal;
+$il-item-audio-padding: $il-padding-medium-vertical 0;
+$il-item-padding: $il-padding-large-horizontal;
 $il-item-marker-border-left: 5px solid;
 $il-item-h5-margin: 4px 0px 2px 0px;
 $il-item-gap-base: 6px;
@@ -31,12 +31,11 @@ $il-item-gap-xs: 1px;
 	padding: $il-item-padding;
 
 	.il-item-title {
-		font-size: $il-font-size-base;
 		display: inline-block;
 		.btn-link, a {
 			font-size: inherit;
 			line-height: $il-line-height-base;
-			
+
 			&:focus-visible {
 				display: block;
 			}
@@ -93,7 +92,7 @@ $il-item-gap-xs: 1px;
 
 	.il-chart-progressmeter-viewbox {
 		@media only screen and (max-width: $il-grid-float-breakpoint-max) {
-			padding-top: $il-padding-large-vertical;
+			padding-top: $il-padding-medium-vertical;
 		}
 	}
 
@@ -144,7 +143,7 @@ $il-item-gap-xs: 1px;
 }
 .il-item-notification-replacement-container:not(:first-child){
 	.il-notification-item{
-		margin-top: $il-margin-large-vertical;
+		margin-top: $il-margin-medium-vertical;
 	}
 }
 
@@ -224,7 +223,7 @@ $il-item-gap-xs: 1px;
 
 	.il-panel-listing-std-container{
 		.il-item .media-left{
-			min-width: calc($il-icon-size-small + 2 * $il-padding-xlarge-horizontal);
+			min-width: calc($il-icon-size-small + 2 * $il-padding-large-horizontal);
 		}
 	}
 }

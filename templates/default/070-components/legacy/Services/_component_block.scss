@@ -14,7 +14,7 @@ div.il_Block, table.il_Block {
 	background-color: $il-main-dark-bg;
 	border: none;
 	text-align: left;
-	padding: $il-padding-base;
+	padding: $il-padding-medium-horizontal;
 }
 
 #il_center_col div.il_Block {
@@ -26,7 +26,7 @@ td.ilBlockHeader, td.ilBlockHeaderBig {
 	/* font-family: 'Open Sans Semibold';  deactivated, since it affects drop downs in the header */
 	font-weight: $il-font-weight-bold;
 	padding: $il-padding-small-vertical 0;
-	margin: 0 $il-padding-base;
+	margin: 0 $il-padding-medium-horizontal;
 	text-align:left;
 	color: $il-neutral-color;
 	border-bottom: 1px solid $il-main-border-color;

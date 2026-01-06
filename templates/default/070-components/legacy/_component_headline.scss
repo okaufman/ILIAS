@@ -36,9 +36,9 @@ h2.ilHeader {
 #headerimage {
 	width: 45px;
 	height: 45px;
-	margin-top: $il-padding-large-vertical;
+	margin-top: $il-padding-medium-vertical;
 	margin-right: $il-padding-small-horizontal;
-	margin-bottom: $il-padding-large-vertical;
+	margin-bottom: $il-padding-medium-vertical;
 	float: left;
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
         width: 35px;
@@ -68,7 +68,7 @@ div.ilHeaderDesc {
 }
 
 div.il_HeaderInner {
-	padding: $il-padding-xxlarge-vertical 0;
+	padding: $il-padding-xlarge-vertical 0;
 	margin-bottom: 5px;
 	overflow: visible;
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {

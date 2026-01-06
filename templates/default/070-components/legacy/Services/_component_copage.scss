@@ -144,7 +144,7 @@ div.ilEditLabel {
 	background-color: $il-main-color;
 	color: white;
 	font-size: $il-font-size-small;
-	padding: $il-padding-base-vertical $il-padding-xs-horizontal;
+	padding: $il-padding-small-vertical $il-padding-xs-horizontal;
 	margin-top: -$il-line-height-computed;
 	margin-left: (-$il-padding-xs-horizontal) + 1px;
 	border: 0;
@@ -311,7 +311,7 @@ div.il-copg-button-group-wide {
 }
 
 #iltinymenu {
-	padding: 0 $il-padding-xlarge-horizontal;
+	padding: 0 $il-padding-large-horizontal;
 	.bd {
 		div {
 			&.last {
@@ -332,7 +332,7 @@ div.il-copg-button-group-wide {
 			color: inherit !important;
 		}
 	}
-	
+
 	a.btn {
 		min-width: 30px;
 	}
@@ -542,8 +542,8 @@ a.nostyle:hover {
 }
 
 #ilPageEditLegend {
-	padding-left: $il-padding-xlarge-horizontal;
-	padding-right: $il-padding-xlarge-horizontal;
+	padding-left: $il-padding-large-horizontal;
+	padding-right: $il-padding-large-horizontal;
 	margin: 10px 0;
 	> div {
 		margin: 5px 0;
@@ -561,7 +561,7 @@ a.nostyle:hover {
 	}
 
 	tr > td {
-		padding: $il-padding-base-vertical $il-padding-xlarge-horizontal;
+		padding: $il-padding-small-vertical $il-padding-large-horizontal;
 	}
 
 	tr > td:first-child {
@@ -711,7 +711,7 @@ div.ilCOPGMediaPrint {
 }
 
 #copg-editor-slate-content {
-	padding: $il-padding-xlarge-vertical 0px;
+	padding: $il-padding-large-vertical 0px;
 
 	p {
 		padding: 0;
@@ -728,17 +728,17 @@ div.ilCOPGMediaPrint {
 
 	h3.ilTinyInfo {
 		font-size: $il-font-size-large;
-		margin-top: $il-margin-xxxlarge-vertical;
-		margin-bottom: $il-margin-large-vertical;
+		margin-top: $il-margin-xlarge-vertical;
+		margin-bottom: $il-margin-medium-vertical;
 	}
 
 	div.alert {
 		margin: 10px 0;
 	}
 	form.form-horizontal {
-		margin-bottom: $il-padding-xlarge-vertical;
+		margin-bottom: $il-padding-large-vertical;
 		.ilFormHeader {
-			padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+			padding: $il-padding-large-vertical $il-padding-large-horizontal;
 			h3.ilHeader {
 				font-size: $il-font-size-base;
 			}
@@ -754,27 +754,27 @@ div.ilCOPGMediaPrint {
 			margin-bottom: 0;
 		}
 		.ilFormFooter {
-			padding: $il-padding-base-vertical $il-padding-xlarge-horizontal;
+			padding: $il-padding-small-vertical $il-padding-large-horizontal;
 			background-color: $il-main-bg;
 		}
 	}
 
 	> .btn-link {
-		padding: 0px $il-padding-xlarge-horizontal;
+		padding: 0px $il-padding-large-horizontal;
 	}
 }
 
 #copg-table-top-actions,
 #copg-top-actions {
-	padding: 0 $il-padding-xlarge-horizontal;
+	padding: 0 $il-padding-large-horizontal;
 }
 
 #copg-table-top-actions .il-viewcontrol-mode {
-	margin-top: $il-margin-xxlarge-vertical;
+	margin-top: $il-margin-xlarge-vertical;
 }
 
 .copg-edit-button-group {
-	padding: $il-padding-base-vertical $il-padding-xlarge-horizontal;
+	padding: $il-padding-small-vertical $il-padding-large-horizontal;
 }
 
 p#copg-auto-save {

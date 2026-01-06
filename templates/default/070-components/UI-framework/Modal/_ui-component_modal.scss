@@ -22,13 +22,13 @@ $modal-header-border-color:   #e5e5e5 !default;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color !default;
 
-$legacy-modal-md:                    $il-column-standard-width * 2 + $il-padding-xlarge-horizontal * 2 + 2 !default;
-$legacy-modal-sm:                    $il-column-standard-width + $il-padding-xlarge-horizontal * 2 + 2 !default;
+$legacy-modal-md:                    $il-column-standard-width * 2 + $il-padding-large-horizontal * 2 + 2 !default;
+$legacy-modal-sm:                    $il-column-standard-width + $il-padding-large-horizontal * 2 + 2 !default;
 
-$modal-title-padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+$modal-title-padding: $il-padding-large-vertical $il-padding-large-horizontal;
 $modal-title-line-height: $il-line-height-base;
 
-$modal-inner-padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+$modal-inner-padding: $il-padding-large-vertical $il-padding-large-horizontal;
 
 $il-modal-transition-speed: 0.15s;
 $il-modal-light-color: $il-main-bg;
@@ -321,7 +321,7 @@ $il-modal-dark-carousel-color: $il-main-bg !default;
 
 	.c-modal--interruptive {
 		.c-modal--interruptive__items {
-			margin-bottom: $il-margin-xxxlarge-vertical;
+			margin-bottom: $il-margin-xlarge-vertical;
 			.c-modal--interruptive__items__key-value {
 				.c-modal--interruptive__items__key-value__key {
 					float: left;

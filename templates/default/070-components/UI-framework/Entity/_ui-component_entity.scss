@@ -17,9 +17,9 @@
         grid-template-columns: min-content auto auto min-content min-content;
         border: s.$il-main-border;
         background-color: s.$il-main-bg;
-        padding: math.div(l.$il-margin-xlarge-vertical, 2) math.div(l.$il-margin-xlarge-horizontal, 2);
+        padding: math.div(l.$il-margin-large-vertical, 2) math.div(l.$il-margin-large-horizontal, 2);
         > *:not(:empty) {
-            padding: math.div(l.$il-margin-xlarge-vertical, 2) math.div(l.$il-margin-xlarge-horizontal, 2);
+            padding: math.div(l.$il-margin-large-vertical, 2) math.div(l.$il-margin-large-horizontal, 2);
         }
     }
 

@@ -11,7 +11,7 @@ $il-characteristic-value-border-color: $il-main-border-color;
 .il-listing-characteristic-value-row {
   @include clearfix; /* i tried .ilClearFloat, did not work as expected */
   border-top: solid $il-characteristic-value-border-color 1px;
-  padding: $il-padding-large-horizontal 0;
+  padding: $il-padding-medium-horizontal 0;
 }
 .il-listing-characteristic-value-row:first-child {
   border-top: none;
@@ -27,7 +27,7 @@ $il-characteristic-value-border-color: $il-main-border-color;
 }
 .il-listing-characteristic-value-item {
   @include ilFloatRight;
-  padding-left: $il-padding-large-horizontal;
+  padding-left: $il-padding-medium-horizontal;
   width: 50%;
   left: 50%;
   @media (max-width: $il-grid-float-breakpoint-max) {

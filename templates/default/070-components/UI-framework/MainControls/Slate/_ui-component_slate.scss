@@ -37,7 +37,7 @@ $il-slate-tree-padding: $il-padding-small-vertical 0;
 
 	&.il-maincontrols-slate-notification{
 		.il-maincontrols-slate-notification-title{
-			padding: $il-padding-large-horizontal;
+			padding: $il-padding-medium-horizontal;
 			.btn-bulky{
 				.glyph{
 					:before{
@@ -47,11 +47,11 @@ $il-slate-tree-padding: $il-padding-small-vertical 0;
 						margin-right: 10px;
 					}
 				}
-				margin: -$il-margin-large-horizontal;
+				margin: -$il-margin-medium-horizontal;
 				border: none;
 				border-right: solid 3px;
 				border-right-color: $il-main-dark-bg;
-				padding: $il-padding-large-horizontal;
+				padding: $il-padding-medium-horizontal;
 
 				background-color: transparent;
 
@@ -134,7 +134,7 @@ $il-slate-tree-padding: $il-padding-small-vertical 0;
 
 	> .c-form,
 	> #copg-editor-slate-content > .c-form {
-		padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+		padding: $il-padding-large-vertical $il-padding-large-horizontal;
 	}
 }
 

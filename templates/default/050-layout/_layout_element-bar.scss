@@ -1,8 +1,8 @@
 @use "../050-layout/basics/" as *;
 
 $l-bar__gap--elements: $il-margin-small-horizontal;
-$l-bar__gap--groups: $il-margin-xlarge-horizontal;
-$l-bar__element__margin-bottom: $il-margin-xlarge-vertical; // this margin separates stacking elements on small screens
+$l-bar__gap--groups: $il-margin-large-horizontal;
+$l-bar__element__margin-bottom: $il-margin-large-vertical; // this margin separates stacking elements on small screens
 
 // bridge into CSS variables, so there is something to override locally without counter-styling
 :root {
@@ -17,7 +17,7 @@ $l-bar__element__margin-bottom: $il-margin-xlarge-vertical; // this margin separ
 
 .l-bar__space-keeper,
 .l-bar__group {
-    // you MUST NOT add padding or margin and SHOULD NOT add any styling (e.g. background-color) in consumer code 
+    // you MUST NOT add padding or margin and SHOULD NOT add any styling (e.g. background-color) in consumer code
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

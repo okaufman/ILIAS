@@ -1,0 +1,15 @@
+@use "sass:math";
+
+////
+/// Creates visually balanced scaled sizes
+/// @group tools
+////
+
+@function scale-with-ratio($ratio, $scale-factor, $base-size, $round-to-num-of-decimals: 0) {
+  $result: $base-size * math.pow($ratio, $scale-factor);
+  @if $round-to-num-of-decimals != null and $round-to-num-of-decimals >= 0 {
+    $result: math.div(math.round($result * (math.pow(10, $round-to-num-of-decimals))), (math.pow(10, $round-to-num-of-decimals)));
+  }
+  @debug "Requested scale factor #{$scale-factor} rounding set to #{$round-to-num-of-decimals} decimals gives result: #{$result}";
+  @return $result;
+}

@@ -1,4 +1,6 @@
-@use "../../010-settings/" as *;
+@use "../../010-settings/settings_color-palette" as *;
+@use "../../010-settings/settings_typography" as *;
+@use "../../010-settings/settings_borders" as *;
 @use "../../050-layout/basics/" as *;
 
 //** Textcolor used in the forms sections bodies
@@ -25,9 +27,9 @@ $il-standard-form-header-byline-font-size: $il-font-size-small;
 //** Background color used for dependant groups (sub forms) in standard forms
 $il-standard-form-dependant-group-bg: $il-main-darker-bg;
 //** Padding above headings of individual groups in forms
-$il-standard-form-header-padding: $il-padding-xxlarge-vertical 0 $il-padding-xxlarge-vertical $il-padding-xlarge-horizontal;
+$il-standard-form-header-padding: $il-padding-xlarge-vertical 0 $il-padding-xlarge-vertical $il-padding-large-horizontal;
 //** Margin above headings of individual groups in forms
-$il-standard-form-header-margin: $il-margin-xlarge-horizontal 0 0 0;
+$il-standard-form-header-margin: $il-margin-large-horizontal 0 0 0;
 //** Border seperating individual groups in forms
 $il-standard-form-header-border:    1px solid $il-main-border-color;
 
@@ -39,8 +41,8 @@ $il-button-min-width-forms: 60px;
 
 $cursor-disabled: not-allowed;
 
-$il-input-line-height-base: ceil($il-line-height-computed + $il-padding-base-vertical * 2 + 2);
-$il-input-min-height: $il-line-height-computed + ((2+2*$il-padding-base-vertical)); // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+$il-input-line-height-base: ceil($il-line-height-computed + $il-padding-small-vertical * 2 + 2);
+$il-input-min-height: 2 * $il-padding-medium-vertical; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
 $il-input-color: $il-text-color;
 $il-input-bg: $il-main-bg;
 $il-input-border-color: $il-main-border-dark-color;

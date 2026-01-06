@@ -10,27 +10,27 @@ $nav-tabs-border: 2px solid $nav-tabs-active-link-hover-bg !default;
 
 #ilTab {
 	padding: 0;
-	margin:  $il-padding-base-vertical 0;
+	margin:  $il-padding-xs-vertical 0;
 	border: 0 none;
-	border-bottom: $nav-tabs-border;
+	border-bottom: 2px solid $il-main-dark-bg;
 
 	> li {
 		float: left;
 		// Make the list-items overlay the bottom border
-		margin: 0 $il-padding-xs-horizontal 0 0;
+		margin: 0 0 -2px 0;
 
 		// Actual tabs (as links)
 		> a {
 			margin: 0;
-			margin-right: 2px;
 			font-size: $il-font-size-base;
 			line-height: $il-line-height-base;
-			padding: $il-padding-large-vertical $il-padding-xlarge-horizontal $il-padding-base-vertical;
-			border: 0 none;
+			padding: $il-padding-xs-vertical $il-padding-small-horizontal;
+			border-bottom: 2px solid transparent;
 			border-radius: $il-border-radius-base $il-border-radius-base 0 0;
 
 			&:hover {
 				border-color: $il-main-bg $il-main-bg $il-main-bg;
+				border-bottom: 2px solid $nav-tabs-active-link-hover-border-color;
 			}
 			@include focus.clear-focus-for-override($clearAfter: true);
 			@include focus.il-focus();
@@ -45,8 +45,7 @@ $nav-tabs-border: 2px solid $nav-tabs-active-link-hover-bg !default;
 				color: $nav-tabs-active-link-hover-color;
 				cursor: default;
 				background-color: $nav-tabs-active-link-hover-bg;
-				border: 0 none;
-				border-bottom-color: transparent;
+				border-bottom: 2px solid $nav-tabs-active-link-hover-border-color;
 			}
 		}
 	}
@@ -59,11 +58,11 @@ $nav-tabs-border: 2px solid $nav-tabs-active-link-hover-bg !default;
 
 /* Sub Tabs */
 #ilSubTab {
-	padding: $il-padding-large-vertical 0;
+	padding: $il-padding-xs-vertical 0;
 	margin: 0;
 
 	> li:first-child > a {
-		padding-left: $il-padding-large-horizontal;
+		padding-left: $il-padding-xs-horizontal;
 	}
 
 
@@ -72,7 +71,7 @@ $nav-tabs-border: 2px solid $nav-tabs-active-link-hover-bg !default;
 
 		> a {
 			border-radius: 0;
-			padding: $il-padding-base-vertical $il-padding-base;
+			padding: $il-padding-xs-vertical $il-padding-xs-horizontal;
 			font-size: ($il-font-size-small);
 
 			&:hover {
@@ -95,5 +94,5 @@ $nav-tabs-border: 2px solid $nav-tabs-active-link-hover-bg !default;
 }
 
 .il_after_tabs_spacing {
-	margin-bottom: $il-margin-xxlarge-vertical;
+	margin-bottom: $il-margin-xlarge-vertical;
 }

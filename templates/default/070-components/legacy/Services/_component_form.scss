@@ -7,7 +7,7 @@
 @use "../../../050-layout/layout_breakpoints" as *;
 
 $cursor-disabled: not-allowed;
-$form-group-margin-bottom: $il-margin-xlarge-vertical;
+$form-group-margin-bottom: $il-margin-large-vertical;
 $il-form-autocomplete-bg: $il-main-bg;
 $il-form-autocomplete-bg-hover: $il-highlight-bg;
 $il-form-autocomplete-border: $il-main-border;
@@ -112,7 +112,7 @@ select[size] {
 	display: block;
 	width: 100%;
 	height: $il-input-min-height;
-	padding: $il-padding-base-vertical $il-padding-base-horizontal;
+	padding: $il-padding-small-vertical $il-padding-small-horizontal;
 	font-size: $il-standard-form-font-size;
 	line-height: $il-line-height-base;
 	color: $il-input-color;
@@ -340,7 +340,7 @@ input[type="checkbox"] {
 	color: $il-standard-form-color;
 	font-size: $il-standard-form-byline-font-size;
 
-	margin: $il-margin-large-vertical 0 $il-margin-large-horizontal;
+	margin: $il-margin-medium-vertical 0 $il-margin-medium-horizontal;
 
 	clear: both;
 
@@ -450,13 +450,13 @@ input[type="checkbox"] {
 // labels on the left and inputs on the right.
 
 .form-horizontal {
-	margin-bottom: $il-margin-xxxlarge-vertical;
+	margin-bottom: $il-margin-xlarge-vertical;
 	background: $il-standard-form-bg;
 
 	.form-group {
 		margin: 0px;
-		padding-top: $il-padding-base-vertical;
-		bottom: $il-padding-base-vertical;
+		padding-top: $il-padding-small-vertical;
+		bottom: $il-padding-small-vertical;
 		background-color: $il-main-bg;
 	}
 
@@ -464,12 +464,12 @@ input[type="checkbox"] {
 	.row > {
 		input, textarea, select {
 			&.form-control {
-				margin-left: $il-padding-xxlarge-horizontal;
+				margin-left: $il-padding-xlarge-horizontal;
 			}
 		}
 
 		.btn, input.btn, .tox-tinymce, div.input {
-			margin-left: $il-padding-xxlarge-horizontal;
+			margin-left: $il-padding-xlarge-horizontal;
 		}
 
 		.tox-tinymce {
@@ -496,20 +496,20 @@ input[type="checkbox"] {
 	// and other content below items
 	.radio,
 	.checkbox {
-		min-height: ($il-line-height-computed + ($il-padding-base-vertical + 1));
+		min-height: ($il-line-height-computed + ($il-padding-small-vertical + 1));
 	}
 
 	label {
 		color: $il-standard-form-label-color;
 		font-size: 100%;
-		padding-right: $il-padding-xlarge-horizontal*2;
+		padding-right: $il-padding-large-horizontal*2;
 	}
 
 	.control-label {
 		text-align: $il-form-label-text-align;
 		//padding-top: 0;
 		//line-height: 24px;
-		padding-bottom: ($il-padding-base-vertical + 1);
+		padding-bottom: ($il-padding-small-vertical + 1);
 		min-height: ($il-line-height-computed + rem-to-pixel($il-font-size-base));
 		@media only screen and (max-width: $il-grid-float-breakpoint-max) {
 		  min-height: auto;
@@ -521,7 +521,7 @@ input[type="checkbox"] {
 		}
 
         > .asterisk {
-          padding-left: $il-padding-base-vertical;
+          padding-left: $il-padding-medium-vertical;
         }
 	  }
 	/*
@@ -531,7 +531,7 @@ input[type="checkbox"] {
 		.control-label {
 			text-align: right;
 			margin-bottom: 0;
-			padding-top: ($il-padding-base-vertical + 1); // Default padding plus a border
+			padding-top: ($il-padding-small-vertical + 1); // Default padding plus a border
 		}
 	} */
 }
@@ -569,16 +569,16 @@ input[type="checkbox"] {
 
 .ilSubForm {
 	background-color: $il-standard-form-dependant-group-bg;
-	padding: $il-padding-base-vertical 0;
-	margin-bottom: $il-margin-xlarge-vertical;
-	margin-left: $il-margin-xxlarge-horizontal;
+	padding: $il-padding-small-vertical 0;
+	margin-bottom: $il-margin-large-vertical;
+	margin-left: $il-margin-xlarge-horizontal;
 
 	.form-group {
 		background-color: $il-standard-form-dependant-group-bg;
 		margin: 0;
 
 		@media (max-width: $il-grid-float-breakpoint-max) {
-			margin: $il-margin-large-vertical 0;
+			margin: $il-margin-medium-vertical 0;
 		}
 	}
 
@@ -683,7 +683,7 @@ div.ilHFormFooter .ilFormCmds {
 }
 
 .wzdrow .form-control {
-	height: (rem-to-pixel($il-font-size-small) * $il-line-height-base) + (2+2*$il-padding-base-vertical) * 1.35;
+	height: $il-line-height-base;
 }
 
 

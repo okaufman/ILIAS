@@ -29,9 +29,9 @@
 		> .c-input {
 			margin: 0; // usually margin spaces inputs, but colored bg padding is doing this in groups
 			&:first-child {
-				margin-top: l.$il-margin-large-vertical;
+				margin-top: l.$il-margin-medium-vertical;
 			}
-			padding: l.$il-padding-xxlarge-vertical l.$il-padding-xxlarge-horizontal;
+			padding: l.$il-padding-xlarge-vertical l.$il-padding-xlarge-horizontal;
 			background-color: s.$il-main-dark-bg;
 			@include c-input_switch-bg-hover(none, s.$il-main-darker-bg);
 		}

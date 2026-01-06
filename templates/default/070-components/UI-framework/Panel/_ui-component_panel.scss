@@ -39,15 +39,11 @@
 		h2, h2.ilHeader {
 			margin: 0;
 			color: ls.$il-panel-heading-color;
-			font-size: $il-font-size-xlarge;
-			line-height: $il-line-height-large;
-			font-weight: $il-font-weight-bold;
 		}
 
 		h4, h4.ilBlockHeader {
 			margin: 0;
 			color: ls.$il-panel-heading-color;
-			font-size: $il-font-size-base;
 		}
 	}
 
@@ -71,7 +67,7 @@
 	}
 
 	.panel-body {
-		padding: $il-padding-xxxlarge-vertical $il-padding-xlarge-horizontal;
+		padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 		background-color: $il-main-bg;
 		@include clearfix;
 	}
@@ -90,14 +86,14 @@
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: $il-margin-base-horizontal;
+		gap: $il-margin-small-horizontal;
 	}
 	.panel-title{
 		order: 1;
 	}
 	.panel-controls {
 		display: flex;
-		gap: $il-margin-base-horizontal;
+		gap: $il-margin-small-horizontal;
 		justify-content: flex-end;
 		margin-left: auto;
 		@include break.on-screen-size(small) {
@@ -113,7 +109,6 @@
 	h2.ilHeader {
 		flex-grow: 99;
 		flex-shrink: 1;
-		line-height: math.ceil($il-font-size-large * 1.235);
 		order: 1;
 	}
 	.ilBlockHeader h4,.ilHeader h4{
@@ -136,34 +131,32 @@
 	box-shadow: ls.$il-panel-shadow;
 	.panel-heading.ilHeader{
 		h2.ilHeader {
-			font-size: $il-font-size-large;
 		}
 
 		h2.ilHeader {
-			font-size: $il-font-size-large;
 		}
 	}
 
 	.panel-body {
 		.il-item-group{
-			margin: 0 (-$il-margin-xlarge-horizontal);
+			margin: 0 (-$il-margin-medium-horizontal);
 			h2{
-				padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
+				padding: $il-padding-medium-vertical $il-padding-large-horizontal;
 			}
 			h3{
-				padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
+				padding: $il-padding-medium-vertical $il-padding-large-horizontal;
 			}
 
 			&:first-child{
-				margin-top: -$il-margin-xxxlarge-vertical;
+				margin-top: -$il-margin-medium-vertical;
 			}
 
 			&:last-child{
-				margin-bottom: -$il-margin-xxxlarge-vertical;
+				margin-bottom: -$il-margin-medium-vertical;
 			}
 
 			.il-item{
-				padding-left: $il-padding-xlarge-horizontal;
+				padding-left: $il-padding-large-horizontal;
 
 				.media-right{
 					vertical-align: middle;
@@ -174,8 +167,7 @@
 
 	.il-panel-listing-std-container > h2, .panel-body h4{
 		display: inline-block;
-		padding: $il-padding-base-vertical 0;
-		font-size: $il-font-size-base;
+		padding: $il-padding-small-vertical 0;
 		color: ls.$il-panel-heading-color;
 		margin: 0;
 	}
@@ -191,7 +183,7 @@
 	-webkit-box-shadow: none;
 	box-shadow: none;
 
-	margin: (-$il-padding-xxxlarge-vertical) (-$il-margin-xlarge-horizontal);
+	margin: (-$il-padding-medium-vertical) (-$il-margin-medium-horizontal);
 
 	.panel-body{
 		margin: 0;
@@ -210,7 +202,7 @@
 		margin-bottom: 0;
 	}
 	> .panel-body > .panel {
-		margin-bottom: $il-margin-large-vertical;
+		margin-bottom: $il-margin-medium-vertical;
 	}
 	.panel-heading{
 		min-height: 34px;
@@ -225,7 +217,6 @@
 
 	> h2 {
 		color: ls.$il-panel-heading-color;
-		font-size: $il-font-size-xlarge;
 		font-weight: $il-font-weight-bold;
 		float: left;
 		padding: ls.$il-panel-heading-padding;

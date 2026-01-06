@@ -7,7 +7,7 @@
 //== View Control
 //
 //##
-$il-vc-glyph-padding-horizontal: $il-padding-base-horizontal;
+$il-vc-glyph-padding-horizontal: $il-padding-small-horizontal;
 $il-vc-glyph-hover-bg: lighten($il-main-color, 5%);
 $il-vc-mode-btn-active: $il-vc-glyph-hover-bg;
 $il-vc-pagination-btn-active-bg: $il-main-bg;
@@ -20,7 +20,7 @@ $il-vc-pagination-btn-active-bg: $il-main-bg;
 .il-viewcontrol-pagination__sectioncontrol {
 	display: flex;
 	align-items: center;
-	gap: $il-margin-xs-horizontal;
+	gap: $il-margin-xs-vertical;
 }
 
 // viewcontrols container bar to include set of inner buttons
@@ -31,8 +31,8 @@ $il-vc-pagination-btn-active-bg: $il-main-bg;
 	width: fit-content;
 	min-height: $il-btn-ctrl-outer-height;
 	min-width: $il-btn-ctrl-outer-height;
+	padding: $il-padding-xs-vertical $il-padding-xs-horizontal;
 	border: 1px solid $il-btn-ctrl-border;
-	padding: $il-padding-xs-horizontal;
 	background-color: $il-btn-ctrl-bg;
 	border-radius: $il-border-radius-secondary-large;
 }
@@ -75,12 +75,12 @@ $il-vc-pagination-btn-active-bg: $il-main-bg;
 		border-radius: $il-border-radius-secondary-large;
 	}
 	li .btn.btn-link {
-		padding-left: $il-padding-large-horizontal * 3;
+		padding-left: $il-padding-medium-horizontal * 3;
 	}
 
 	li.selected .btn::before {
 		position: absolute;
-		left: $il-margin-large-horizontal;
+		left: $il-margin-medium-horizontal;
 		font-family: "Glyphicons Halflings";
 		color: $il-btn-ctrl-color;
 		content: "\e013";
@@ -88,7 +88,7 @@ $il-vc-pagination-btn-active-bg: $il-main-bg;
 }
 
 .il-viewcontrol-fieldselection .dropdown-menu {
-	padding: $il-padding-xlarge-horizontal $il-padding-xlarge-vertical;
+	padding: $il-padding-large-horizontal $il-padding-large-vertical;
 }
 
 // View control buttons with glyphs

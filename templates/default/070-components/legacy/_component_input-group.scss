@@ -18,42 +18,42 @@ $input-group-addon-border-color: $il-input-border-color;
     position: relative; // For dropdowns
     display: table;
     border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
-  
+
     // Undo padding and float of grid classes
     &[class*="col-"] {
       float: none;
       padding-right: 0;
       padding-left: 0;
     }
-  
+
     .form-control {
       // Ensure that the input is always above the *appended* addon button for
       // proper border colors.
       position: relative;
       z-index: 2;
-  
+
       // IE9 fubars the placeholder attribute in text inputs and the arrows on
       // select elements in input groups. To fix it, we float the input. Details:
       // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855
       float: left;
-  
+
       width: 100%;
       margin-bottom: 0;
-  
+
       &:focus {
         z-index: 3;
       }
     }
   }
-  
-  
+
+
   // Display as table-cell
   // -------------------------
   .input-group-addon,
   .input-group-btn,
   .input-group .form-control {
     display: table-cell;
-  
+
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
     }
@@ -65,11 +65,11 @@ $input-group-addon-border-color: $il-input-border-color;
     white-space: nowrap;
     vertical-align: middle; // Match the inputs
   }
-  
+
   // Text input groups
   // -------------------------
   .input-group-addon {
-    padding: $il-padding-base-vertical $il-padding-base-horizontal;
+    padding: $il-padding-small-vertical $il-padding-small-horizontal;
     font-size: $il-font-size-base;
     font-weight: 400;
     line-height: 1;
@@ -78,7 +78,7 @@ $input-group-addon-border-color: $il-input-border-color;
     background-color: $input-group-addon-bg;
     border: 1px solid $input-group-addon-border-color;
     border-radius: $il-input-border-radius;
-  
+
     // Sizing
     &.input-sm {
       padding: $il-padding-small-vertical $il-padding-small-horizontal;
@@ -86,18 +86,18 @@ $input-group-addon-border-color: $il-input-border-color;
       border-radius: $il-border-radius-small;
     }
     &.input-lg {
-      padding: $il-padding-large-vertical $il-padding-large-horizontal;
+      padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
       font-size: $il-font-size-large;
       border-radius: $il-border-radius-large;
     }
-  
+
     // Nuke default margins from checkboxes and radios to vertically center within.
     input[type="radio"],
     input[type="checkbox"] {
       margin-top: 0;
     }
   }
-  
+
   // Reset rounded corners
   .input-group .form-control:first-child,
   .input-group-addon:first-child,
@@ -123,7 +123,7 @@ $input-group-addon-border-color: $il-input-border-color;
   .input-group-addon:last-child {
     border-left: 0;
   }
-  
+
   // Button input groups
   // -------------------------
   .input-group-btn {
@@ -132,7 +132,7 @@ $input-group-addon-border-color: $il-input-border-color;
     // `font-size` in combination with `inline-block` on buttons.
     font-size: 0;
     white-space: nowrap;
-  
+
     // Negative margin for spacing, position for bringing hovered/focused/actived
     // element above the siblings.
     > .btn {
@@ -147,7 +147,7 @@ $input-group-addon-border-color: $il-input-border-color;
         z-index: 2;
       }
     }
-  
+
     // Negative margin to only have a 1px border between the two
     &:first-child {
       > .btn,

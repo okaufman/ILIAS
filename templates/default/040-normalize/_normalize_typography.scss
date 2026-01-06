@@ -1,84 +1,67 @@
 @use "../010-settings/" as *;
-
+/* atkinson-hyperlegible-next-regular - latin */
 @font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-Regular.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-Regular.woff') format('woff');
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: normal;
 	font-weight: 400;
-	font-style: normal;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* atkinson-hyperlegible-next-italic - latin */
 @font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-Bold.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-Bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-Italic.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-Italic.woff') format('woff');
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: italic;
 	font-weight: 400;
-	font-style: italic;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* atkinson-hyperlegible-next-600 - latin */
 @font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-BoldItalic.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-BoldItalic.woff') format('woff');
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: normal;
+	font-weight: 600;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-next-600italic - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: italic;
+	font-weight: 600;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-next-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: normal;
 	font-weight: 700;
-	font-style: italic;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* atkinson-hyperlegible-next-700italic - latin */
 @font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-Light.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-Light.woff') format('woff');
-	font-weight: 300;
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
+	font-style: italic;
+	font-weight: 700;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-next-800 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Atkinson Hyperlegible Next';
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-LightItalic.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-LightItalic.woff') format('woff');
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-Semibold.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-Semibold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-SemiboldItalic.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-SemiboldItalic.woff') format('woff');
-	font-weight: 600;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-ExtraBold.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-ExtraBold.woff') format('woff');
 	font-weight: 800;
-	font-style: normal;
+	src: url('#{$il-web-font-path}AtkinsonHyperlegibleNext/atkinson-hyperlegible-next-v7-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@font-face {
-	font-family: 'Open Sans';
-	src:	url('#{$il-web-font-path}OpenSansWeb/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
-			url('#{$il-web-font-path}OpenSansWeb/OpenSans-ExtraBoldItalic.woff') format('woff');
-	font-weight: 800;
-	font-style: italic;
-}
 
 // currently from https://github.com/MorbZ/OpenSansEmoji
 // under http://www.apache.org/licenses/LICENSE-2.0

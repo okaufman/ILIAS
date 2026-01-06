@@ -21,7 +21,7 @@ $il-table-presentation-details-viewcontrols-btn-color: $il-main-color;
 $il-table-presentation-details-viewcontrols-btn-bg: white;
 
 .il-table-presentation-viewcontrols {
-    margin-bottom: $il-margin-large-vertical;
+    margin-bottom: $il-margin-medium-vertical;
     @media print {
         display: none !important;
     }
@@ -30,8 +30,8 @@ $il-table-presentation-details-viewcontrols-btn-bg: white;
 .il-table-presentation-row {
     background-color: $il-main-bg;
     border-top: $il-table-presentation-rowborder-top;
-    padding-top: $il-padding-xxlarge-vertical;
-    padding-bottom: $il-padding-xxlarge-vertical;
+    padding-top: $il-padding-xlarge-vertical;
+    padding-bottom: $il-padding-xlarge-vertical;
     position: relative;
     white-space: nowrap;
 
@@ -86,7 +86,7 @@ $il-table-presentation-details-viewcontrols-btn-bg: white;
     .il-table-presentation-actions {
         @include brk.on-screen-size('small') {
             order: 3;
-            margin-top: $il-margin-xxlarge-vertical;
+            margin-top: $il-margin-xlarge-vertical;
         }
     }
 
@@ -97,7 +97,7 @@ $il-table-presentation-details-viewcontrols-btn-bg: white;
     }
 
     .il-table-presentation-row-expanded {
-        margin-top:  $il-margin-large-vertical;
+        margin-top:  $il-margin-medium-vertical;
 
         @include brk.on-screen-size('small') {
             order: 2;
@@ -105,7 +105,7 @@ $il-table-presentation-details-viewcontrols-btn-bg: white;
 
         .il-table-presentation-details {
             .il-table-presentation-actions {
-                margin-bottom: $il-margin-large-vertical;
+                margin-bottom: $il-margin-medium-vertical;
             }
 
             .il-table-presentation-fields {
@@ -134,7 +134,7 @@ $table-ordering__inset-row__shadow: inset 0px 0px 14px 2px #00000063;
 .c-table-data,
 .c-table-ordering {
     .viewcontrols {
-        margin-bottom: $il-margin-large-vertical;
+        margin-bottom: $il-margin-medium-vertical;
     }
 }
 
@@ -147,10 +147,10 @@ $table-ordering__inset-row__shadow: inset 0px 0px 14px 2px #00000063;
 
 .c-table-data__cell {
     background-color: $il-main-bg; // so sticky cells can cover up cells underneath them
-    padding: $il-padding-large-vertical $il-padding-large-horizontal;
+    padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
     border: 1px solid $il-main-border-color;
     &--multiaction {
-        padding-bottom: $il-padding-large-vertical;
+        padding-bottom: $il-padding-medium-vertical;
     }
 }
 
@@ -179,7 +179,7 @@ th.c-table-data__cell {
         top: 0;
         z-index: 3;
         &.c-table-data__header__rowselection {
-            padding: $il-padding-xxlarge-vertical $il-padding-large-horizontal;
+            padding: $il-padding-xlarge-vertical $il-padding-medium-horizontal;
             text-align: center;
             // row selection also sticks to the left
             position: sticky;
@@ -190,7 +190,7 @@ th.c-table-data__cell {
             background: linear-gradient(90deg, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
         }
         &.c-table-data__header__rowaction {
-            padding: $il-padding-xxlarge-vertical $il-padding-large-horizontal;
+            padding: $il-padding-xlarge-vertical $il-padding-medium-horizontal;
         }
     }
 }
@@ -220,7 +220,7 @@ th.c-table-data__cell:after {
 
 // Resizable Header Cell
 .c-table-data__header__resize-wrapper {
-    padding: $il-padding-xxlarge-vertical $il-padding-large-horizontal;
+    padding: $il-padding-xlarge-vertical $il-padding-medium-horizontal;
     height: 100%;
     margin: 0px;
     display: block;
@@ -235,7 +235,7 @@ th.c-table-data__cell:after {
         left: 0;
         display: block;
         position: absolute;
-        height: $il-padding-xxlarge-vertical * 1.5;
+        height: $il-padding-xlarge-vertical * 1.5;
         width: calc(100% - 10px);
         background: linear-gradient(360deg, white, transparent);
         pointer-events: none;
@@ -402,7 +402,7 @@ td.c-table-data__cell--highlighted {
         // border and padding before/after every entry
         tr.c-table-data__row {
             border-top: 1px solid $il-main-border-color;
-            padding: $il-margin-xxxlarge-vertical 0 $il-margin-xxxlarge-vertical;
+            padding: $il-margin-xlarge-vertical 0 $il-margin-xlarge-vertical;
         }
         .c-table-data__table {
             border-bottom: 1px solid $il-main-border-color;

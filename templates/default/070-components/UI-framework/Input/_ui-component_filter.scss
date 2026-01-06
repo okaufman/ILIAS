@@ -24,7 +24,7 @@ $il-standard-filter-label-width: 30%;
 $il-standard-filter-input-remove-width: 10%;
 $il-standard-filter-font-color-disabled: $il-text-light-color;
 $il-standard-filter-controls-bottom: 0px;
-$il-standard-filter-controls-padding-left: $il-padding-base-horizontal;
+$il-standard-filter-controls-padding-left: $il-padding-small-horizontal;
 $il-standard-filter-controls-padding-bottom: 6px;
 
 //** Division with active inputs under Filter Bar
@@ -34,7 +34,7 @@ $il-standard-filter-active-inputs-font-size: $il-font-size-small;
 
 //** Popovers
 $il-standard-filter-add-input-popover-list-margin: 0;
-$il-standard-filter-add-input-popover-list-padding: $il-margin-base-vertical $il-margin-base-horizontal;
+$il-standard-filter-add-input-popover-list-padding: $il-margin-small-vertical $il-margin-small-horizontal;
 $il-standard-filter-add-input-popover-list-button-width: 100%;
 
 .il-filter {
@@ -42,8 +42,8 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 		display: flex;
 	}
 	.col-md-4, .col-md-6{
-		padding-top: $il-padding-large-vertical;
-		padding-bottom: $il-padding-large-vertical;
+		padding-top: $il-padding-medium-vertical;
+		padding-bottom: $il-padding-medium-vertical;
 		padding-right: 0px;
 	}
 
@@ -129,7 +129,7 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 		}
 
 		li > button {
-			padding: $il-padding-large-vertical $il-standard-filter-controls-padding-left;
+			padding: $il-padding-medium-vertical $il-standard-filter-controls-padding-left;
 			display: block;
 			width: $il-standard-filter-add-input-popover-list-button-width;
 		}
@@ -176,7 +176,7 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 		button {
 			min-height: 0px;
 			width: $il-standard-filter-input-group-width;
-			padding: $il-padding-large-vertical $il-padding-large-horizontal;
+			padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 			border: none;
 			background-color: initial;
 			font-size: $il-standard-filter-bar-btn-font-size;
@@ -224,7 +224,7 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 
 	span {
 		display: inline-block;
-		margin: $il-margin-small-vertical $il-margin-base-horizontal $il-margin-small-vertical $il-standard-filter-active-inputs-margin-left;
+		margin: $il-margin-small-vertical $il-margin-small-horizontal $il-margin-small-vertical $il-standard-filter-active-inputs-margin-left;
 		padding: $il-standard-filter-active-inputs-padding-vertical $il-standard-filter-controls-padding-left;
 		float: left;
 		background-color: $il-main-bg;
@@ -239,13 +239,13 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 .il-filter-input-section {
 	border-top: $il-standard-filter-input-section-border-top;
 	position: relative;
-	padding-right: $il-padding-base-horizontal;
+	padding-right: $il-padding-small-horizontal;
 	margin: $il-standard-filter-input-section-margin;
 	background: $il-main-dark-bg;
 
 	.leftaddon {
 		font-size: $il-font-size-small;
-		padding: $il-padding-base-vertical $il-padding-base-horizontal;
+		padding: $il-padding-small-vertical $il-padding-small-horizontal;
 	}
 
 	.il-input-multiselect {
@@ -253,7 +253,7 @@ $il-standard-filter-add-input-popover-list-button-width: 100%;
 	}
 
 	.c-input--duration {
-		margin: $il-margin-xxlarge-vertical;
+		margin: $il-margin-xlarge-vertical;
 	}
 }
 

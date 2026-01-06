@@ -11,8 +11,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: $il-padding-base-vertical;
-  margin-bottom: $il-padding-base-vertical;
+  gap: $il-padding-small-vertical;
+  margin-bottom: $il-padding-small-vertical;
 }
 
 // glyphs are grey by default, which leads to low contrast when being
@@ -28,8 +28,8 @@
   border: $il-main-border;
   display: inline-block;
   width: 100%;
-  padding-left: $il-padding-large-horizontal;
-  padding-right: $il-padding-large-horizontal;
+  padding-left: $il-padding-medium-horizontal;
+  padding-right: $il-padding-medium-horizontal;
   margin: 0;
 }
 

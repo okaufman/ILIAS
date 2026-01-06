@@ -2,7 +2,9 @@
 
 @use "../../010-settings/" as *;
 @use "../../010-settings/legacy-settings/legacy-settings_symbol" as t-symbol;
+@use "../../010-settings/legacy-settings/legacy-settings_form" as s-form;
 @use "../basics" as *;
+@use "../../030-tools/tool_scale-with-ratio" as t-scale;
 
 $il-standard-page-border-light-color: $il-main-border-color;
 
@@ -19,8 +21,8 @@ $il-standard-page-slate-width: $il-column-standard-width;
 // MAINBAR
 //
 
-$il-mainbar-btn-height: 80px;
-$il-mainbar-btn-width: 80px;
+$il-mainbar-btn-height:  t-scale.scale-with-ratio($scale-ratio, 6, $spacing-base) !default;
+$il-mainbar-btn-width: t-scale.scale-with-ratio($scale-ratio, 6, $spacing-base);
 $il-mainbar-btn-margin: null;
 
 $il-mainbar-width: $il-mainbar-btn-width;
@@ -29,7 +31,7 @@ $il-mainbar-width: $il-mainbar-btn-width;
 // SLATES
 //
 
-$il-slate-content-spacing: $il-padding-base-horizontal;
+$il-slate-content-spacing: $il-padding-small-horizontal;
 
 $il-mainbar-close-slate-btn-height: 45px;
 $il-metabar-close-slate-btn-height: 30px;
@@ -40,13 +42,13 @@ $il-slate-bulky-icon-size: 1.0625rem;
 $il-slate-content-spacing: 2px;
 
 //** breadcrumbs
-$il-standard-page-breadcrumbs-height: 33px;
+$il-standard-page-breadcrumbs-height: s-form.$il-input-min-height + 2 * $il-padding-xs-vertical;
 $il-standard-page-breadcrumbs-seperator: " \e606";
 $il-standard-page-breadcrumbs-bg-color: $il-main-bg;
 $il-standard-page-breadcrumbs-color: $il-link-color;
 $il-standard-page-breadcrumbs-active-color: $il-link-hover-color;
 $il-standard-page-breadcrumbs-divider-color: $il-neutral-light-color;
-$il-standard-page-breadcrumbs-font-weight: $il-font-weight-bold;
+$il-standard-page-breadcrumbs-font-weight: $il-font-weight-base;
 
 //** Shadows
 $il-standard-page-shadow-color: rgba(0, 0, 0, .1);

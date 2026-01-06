@@ -483,7 +483,7 @@ class PageContentGUI
                 break;
 
             case (null !== $this->left_content || null !== $this->right_content):
-                $center_column_class = 'col-sm-9';
+                $center_column_class = 'col-sm-8';
                 break;
 
             default:

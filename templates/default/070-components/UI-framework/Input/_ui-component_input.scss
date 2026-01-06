@@ -42,7 +42,7 @@
 
 /// general form container styling
 .c-form {
-  margin-bottom: l.$il-margin-xxlarge-vertical;
+  margin-bottom: l.$il-margin-xlarge-vertical;
 
   .c-form__header,
   .c-form__footer {
@@ -59,7 +59,7 @@
     }
   }
   .c-form__footer {
-    margin-top: l.$il-margin-xxlarge-vertical;
+    margin-top: l.$il-margin-xlarge-vertical;
   }
 }
 
@@ -71,7 +71,7 @@
                         "label error"
                         "label help";
 
-  margin-top: l.$il-margin-xxlarge-vertical;
+  margin-top: l.$il-margin-xlarge-vertical;
   &:first-child {
     margin-top: 0;
   }
@@ -79,10 +79,9 @@
   > label {
     display: block;
     grid-area: label;
-    padding-right: l.$il-margin-large-horizontal;
-
+    padding-right: l.$il-margin-medium-horizontal;
     > .asterisk:first-child {
-      padding-left: $il-padding-base-vertical;
+      padding-left: l.$il-padding-medium-horizontal;
     }
   }
 
@@ -105,7 +104,7 @@
                           "error"
                           "help";
     > .c-input__field {
-      margin-top: l.$il-margin-base-vertical;
+      margin-top: l.$il-margin-small-vertical;
     }
   }
 }
@@ -115,18 +114,18 @@
 // hover/focus extends beyond box without pushing it
 .c-input:not([data-il-ui-component="section-field-input"]) {
   &:hover {
-    box-shadow: 0px 0px 0px l.$il-margin-base-horizontal $il-main-dark-bg;
+    box-shadow: 0px 0px 0px l.$il-margin-small-horizontal $il-main-dark-bg;
     background-color: $il-main-dark-bg;
   }
   &:has(:focus-visible) {
-    box-shadow: 0px 0px 0px l.$il-margin-base-horizontal $il-highlight-bg;
+    box-shadow: 0px 0px 0px l.$il-margin-small-horizontal $il-highlight-bg;
     background-color: $il-highlight-bg;
   }
 }
 
 .c-form {
   .c-form__error-msg {
-    margin-top: l.$il-margin-large-vertical;
+    margin-top: l.$il-margin-medium-vertical;
     margin-bottom: 0; // overrides alert default
   }
   .c-input[data-il-ui-component] input:invalid {
@@ -146,7 +145,7 @@
   }
   .c-input[data-il-ui-component]:not([data-il-ui-component="section-field-input"]):has(> .c-input__error-msg) {
     border-inline-start: 6px solid $il-alert-danger-border;
-    padding-left: l.$il-padding-base-horizontal;
+    padding-left: l.$il-padding-small-horizontal;
   }
   [data-il-ui-component="textarea-field-input"] .c-input__field textarea,
   [data-il-ui-component="markdown-field-input"] .c-input__field .c-field-markdown textarea {
@@ -159,15 +158,15 @@
   [data-il-ui-component="markdown-field-input"] > .c-input__field .c-field-markdown textarea,
   [data-il-ui-component="url-field-input"] .c-input__field input {
     width: 100%;
-    padding: l.$il-padding-base-vertical l.$il-padding-base-horizontal;
+    padding: l.$il-padding-small-vertical l.$il-padding-small-horizontal;
     font-size: $il-standard-form-font-size;
   }
   [data-il-ui-component="datetime-field-input"] .c-input__field input,
   [data-il-ui-component="numeric-field-input"] .c-input__field input {
-    padding: l.$il-padding-base-vertical l.$il-padding-base-horizontal;
+    padding: l.$il-padding-small-vertical l.$il-padding-small-horizontal;
     font-size: $il-standard-form-font-size;
   }
   [data-il-ui-component="select-field-input"] .c-input__field select {
-    padding: l.$il-padding-base-vertical l.$il-padding-base-horizontal;
+    padding: l.$il-padding-small-vertical l.$il-padding-small-horizontal;
   }
 }

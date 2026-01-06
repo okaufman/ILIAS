@@ -1,46 +1,61 @@
 @use "../../030-tools/tool_rem-conversion" as t-rem;
+@use "../../030-tools/tool_scale-with-ratio" as t-scale;
 
-//== Spacing
+$_vertical-to-horizontal-ratio: 1.333;
+$scale-ratio: 1.333;
+
+$spacing-base: 16px;
+
 //
-//## Define common padding, margin and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-$il-padding-base: 9px;
+// GENERAL SPACINGS
+//
 
-$il-padding-base-vertical: 3px;
-$il-padding-base-horizontal: $il-padding-base;
+$_spacing-xsmall-vertical: t-scale.scale-with-ratio($scale-ratio, -3, $spacing-base);
+$_spacing-xsmall-horizontal: $_spacing-xsmall-vertical * $_vertical-to-horizontal-ratio;
 
-$il-padding-large-vertical: 6px;
-$il-padding-large-horizontal: 12px;
+$_spacing-small-vertical: t-scale.scale-with-ratio($scale-ratio, -2, $spacing-base);
+$_spacing-small-horizontal: $_spacing-small-vertical * $_vertical-to-horizontal-ratio;
 
-$il-padding-xlarge-vertical: 9px;
-$il-padding-xlarge-horizontal: 15px;
+$_spacing-medium-vertical: $spacing-base;
+$_spacing-medium-horizontal: $_spacing-medium-vertical * $_vertical-to-horizontal-ratio;
 
-$il-padding-xxlarge-vertical: 12px;
-$il-padding-xxlarge-horizontal: 15px;
+$_spacing-large-vertical: t-scale.scale-with-ratio($scale-ratio, 0.75, $spacing-base);
+$_spacing-large-horizontal: $_spacing-large-vertical * $_vertical-to-horizontal-ratio;
 
-$il-padding-xxxlarge-vertical: 15px;
-$il-padding-xxxlarge-horizontal: 18px;
+$_spacing-xlarge-vertical: t-scale.scale-with-ratio($scale-ratio, 1, $spacing-base);
+$_spacing-xlarge-horizontal: $_spacing-xlarge-vertical * $_vertical-to-horizontal-ratio;
 
-$il-padding-small-vertical: 3px;
-$il-padding-small-horizontal: 6px;
+//
+// PADDINGS
+//
 
-$il-padding-xs-vertical: 1px;
-$il-padding-xs-horizontal: 3px;
+$il-padding-small-vertical: $_spacing-small-vertical;
+$il-padding-small-horizontal: $_spacing-small-horizontal;
 
-$il-margin-base: $il-padding-base;
-$il-margin-base-vertical: $il-padding-base-vertical;
-$il-margin-base-horizontal: $il-padding-base-horizontal;
+$il-padding-xs-vertical: $_spacing-xsmall-vertical;
+$il-padding-xs-horizontal: $_spacing-xsmall-horizontal;
+
+$il-padding-medium-vertical: $_spacing-medium-vertical;
+$il-padding-medium-horizontal: $_spacing-medium-horizontal;
+
+$il-padding-large-vertical: $_spacing-large-vertical;
+$il-padding-large-horizontal: $_spacing-large-horizontal;
+
+$il-padding-xlarge-vertical: $_spacing-xlarge-vertical;
+$il-padding-xlarge-horizontal: $_spacing-xlarge-horizontal;
+
+//
+// MARGINS
+//
+
+$il-margin-medium-vertical: $il-padding-medium-vertical;
+$il-margin-medium-horizontal: $il-padding-medium-horizontal;
 
 $il-margin-large-vertical: $il-padding-large-vertical;
 $il-margin-large-horizontal: $il-padding-large-horizontal;
 
 $il-margin-xlarge-vertical: $il-padding-xlarge-vertical;
 $il-margin-xlarge-horizontal: $il-padding-xlarge-horizontal;
-
-$il-margin-xxlarge-vertical: $il-padding-xxlarge-vertical;
-$il-margin-xxlarge-horizontal: $il-padding-xxlarge-horizontal;
-
-$il-margin-xxxlarge-vertical: $il-padding-xxxlarge-vertical;
-$il-margin-xxxlarge-horizontal: $il-padding-xxxlarge-horizontal;
 
 $il-margin-small-vertical: $il-padding-small-vertical;
 $il-margin-small-horizontal: $il-padding-small-horizontal;
@@ -52,12 +67,12 @@ $il-margin-xs-horizontal: $il-padding-xs-horizontal;
 // scss-docs-start spacer-variables-maps
 $spacers: (
     0: 0,
-    1: $il-padding-base-horizontal,
-    2: $il-padding-large-horizontal,
-    3: $il-padding-xlarge-horizontal,
-    4: $il-padding-xxlarge-horizontal,
-    5: $il-padding-xxxlarge-horizontal,
+    1: $il-padding-xs-horizontal,
+    2: $il-padding-small-horizontal,
+    3: $il-padding-medium-horizontal,
+    4: $il-padding-large-horizontal,
+    5: $il-padding-xlarge-horizontal,
     ) !default;
 // scss-docs-end spacer-variables-maps
 
-$grid-gutter-width: 30px !default;
+$grid-gutter-width: $il-padding-large-horizontal !default;

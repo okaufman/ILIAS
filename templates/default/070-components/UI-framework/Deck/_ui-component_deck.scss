@@ -5,12 +5,12 @@
   .row{
     margin-left: -$il-margin-xs-horizontal;
     margin-right: 0;
-    margin-bottom: $il-margin-xxlarge-vertical;
+    margin-bottom: $il-margin-xlarge-vertical;
 
     > div{
       padding-left: $il-padding-xs-horizontal;
       padding-right: $il-padding-xs-horizontal;
-      margin-bottom: $il-margin-large-vertical;
+      margin-bottom: $il-margin-medium-vertical;
     }
 
     &.row-eq-height {

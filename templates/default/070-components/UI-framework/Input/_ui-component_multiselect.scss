@@ -5,14 +5,14 @@
 	padding: 0;
 	margin: 0;
 	> li {
-		margin-top: l.$il-margin-base-vertical;
+		margin-top: l.$il-margin-small-vertical;
 		&:first-child {
 			margin-top: 0;
 		}
 		label {
 			display: flex;
 			> input[type="checkbox"] {
-				margin-right: l.$il-margin-base-horizontal;
+				margin-right: l.$il-margin-small-horizontal;
 				width: auto;
 			}
 			> .c-input__multiselect__label-text {

@@ -96,7 +96,7 @@ div.il-system-infos {
     display: flex;
     flex-direction: row;
     height: $il-standard-page-header-height;
-    padding: 0 $il-padding-xlarge-horizontal;
+    padding: 0 $il-padding-large-horizontal;
     position: fixed;
     width: 100%;
     justify-content: space-between;
@@ -173,7 +173,16 @@ main {
 	overflow: auto;
 	#mainspacekeeper {
 	    flex-grow: 1; // stretches content from top to footer
-    	width: 100%;
+		padding: 0 $il-margin-xlarge-horizontal;
+		width: 100%;
+		max-width: $screen-lg;
+		margin: 0 auto;
+			.c-table-data__table-wrapper {
+				margin: 0 calc(50% - (50vw - 70px));
+				table {
+					margin: 0 auto;
+				}
+		}
 	}
 }
 #il_center_col {
@@ -341,7 +350,7 @@ main {
 			    content: " \e606";
 			    font-family: "il-icons";
 			    font-size: $il-font-size-large;
-			    margin-right: $il-padding-base-horizontal;
+			    margin-right: $il-padding-small-horizontal;
 			}
 		}
 

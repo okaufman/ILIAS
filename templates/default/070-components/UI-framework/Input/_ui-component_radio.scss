@@ -4,12 +4,12 @@
 	> .c-field-radio__item {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: l.$il-margin-large-vertical;
+		margin-top: l.$il-margin-medium-vertical;
 		&:first-child {
 			margin-top: 0;
 		}
 		> input {
-			margin-right: l.$il-margin-base-horizontal;
+			margin-right: l.$il-margin-small-horizontal;
 			width: auto;
 		}
 		> label {
