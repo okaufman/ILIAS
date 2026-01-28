@@ -21,18 +21,18 @@ div.ilPreconditionItem {
 
 /* Repository */
 div.ilContainerListItemOuter {
-	padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+	padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 	zoom: 1;
 
 	.subitem {
-		margin-right: (-$il-padding-xlarge-horizontal);
+		margin-right: (-$il-padding-large-horizontal);
 	}
 }
 
 div.tblfooter {
 	&.ilContainerListFooter {
 		font-size: $il-font-size-base;
-		padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+		padding: $il-padding-large-vertical $il-padding-large-horizontal;
 		text-align: left;
 		margin: 0;
 		> input {
@@ -73,7 +73,7 @@ div.ilContainerListItemCB {
 	width: 25px;*/
 	display: table-cell;
 	vertical-align: top;
-	padding-right: $il-padding-xlarge-horizontal;
+	padding-right: $il-padding-large-horizontal;
 
 	img{
 		width: 20px;
@@ -93,7 +93,7 @@ div.ilContainerListItemIcon a {
 }
 
 div.ilContainerListItemIconCB {
-	margin-left: $il-padding-xlarge-horizontal;
+	margin-left: $il-padding-large-horizontal;
 }
 
 div[class^="il_editarea"] .ilContainerListItemOuter img,
@@ -117,7 +117,7 @@ div.ilContainerListItemContentCB {
 
 div.il_ContainerListItem {
 	margin: $il-padding-small-vertical 0;
-	padding-left: $il-padding-base;
+	padding-left: $il-padding-medium-horizontal;
 	width:100%;
 }
 
@@ -193,7 +193,7 @@ div#ilContRepIntro img {
 
 
 .ilContainerTileRows {
-	padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
+	padding: $il-padding-medium-vertical $il-padding-large-horizontal;
 	background-color: $il-main-bg;
 }
 
@@ -213,7 +213,7 @@ div#ilContRepIntro img {
 	padding: 15px 10px;
 	background-color: $il-main-dark-bg;
 	text-align: center;
-	margin: 0 (-$il-padding-xlarge-horizontal);
+	margin: 0 (-$il-padding-large-horizontal);
 }
 
 .il_ContainerListItem .navbar-form .modal .radio {

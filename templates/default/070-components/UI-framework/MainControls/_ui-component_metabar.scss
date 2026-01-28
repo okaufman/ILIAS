@@ -7,8 +7,8 @@
 //== metabar
 $il-metabar-glyph-color: $il-neutral-light-color;
 $il-metabar-entry-border: none;
-$il-metabar-entry-height: 60px;
-$il-metabar-entry-width: 60px;
+$il-metabar-entry-height: $il-standard-page-header-height;
+$il-metabar-entry-width: $il-standard-page-header-height;
 $il-metabar-glyph-size: 1.4375rem;
 $il-metabar-slates-width: 500px;
 $il-metabar-slates-bg-color: #fafafa;
@@ -94,7 +94,7 @@ $il-metabar-small-glyph-size: 1.25rem;
 
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
 		.il-metabar-more-button {
-			padding-right: $il-padding-xxxlarge-horizontal;
+			padding-right: $il-padding-xlarge-horizontal;
 			.icon.custom {
 				position: relative;
 				img {
@@ -104,10 +104,10 @@ $il-metabar-small-glyph-size: 1.25rem;
 					position: absolute;
 					margin-right: $il-margin-xs-horizontal;
 					&.il-counter-novelty {
-						margin-top: -$il-margin-large-vertical;
+						margin-top: -$il-margin-medium-vertical;
 					}
 					&.il-counter-status {
-						margin-top: $il-margin-xxlarge-vertical;
+						margin-top: $il-margin-xlarge-vertical;
 					}
 				}
 			}
@@ -156,8 +156,8 @@ $il-metabar-small-glyph-size: 1.25rem;
 				font-family: "il-icons";
 				position: absolute;
 				font-size: $il-slate-bulky-glyph-size;
-				right: $il-margin-large-horizontal;
-				top: $il-padding-xxxlarge-vertical;
+				right: $il-margin-medium-horizontal;
+				top: $il-padding-xlarge-vertical;
 				line-height: $il-line-height-computed;
 			}
 		}

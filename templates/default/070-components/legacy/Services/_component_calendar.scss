@@ -105,7 +105,7 @@ table.calmini {
 	border-collapse: collapse;
 	background-color: $il-main-dark-bg;
 	border: none;
-	margin-bottom: $il-margin-xxlarge-vertical;
+	margin-bottom: $il-margin-xlarge-vertical;
 	tr, td, th {
 		border: none;
 		padding: 5px 3px;
@@ -160,7 +160,7 @@ a.callink:hover {
 
 //** Moved from Services/Calendar/templates/calendar.css
 table.calstd {
-	margin-top: $il-margin-large-vertical;
+	margin-top: $il-margin-medium-vertical;
 	color: $il-text-color;
 	width:100%;
 	border: none;
@@ -478,7 +478,7 @@ span.calminiinactive {
 
 span.ilIcalIcon .btn {
 	text-align: initial;
-	margin-top: $il-margin-large-vertical;
+	margin-top: $il-margin-medium-vertical;
 }
 
 .il_InfoScreenSection {

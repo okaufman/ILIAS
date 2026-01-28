@@ -19,7 +19,8 @@ $il-pixel-to-rem: 0.0625;
         @return($converted);
     }
     @else {
-        @error "Rem to pixel conversion requires a rem value as an input. Unit was '#{math.unit($convert-this)}' instead.";
+        // @error "Rem to pixel conversion requires a rem value as an input. Unit was '#{math.unit($convert-this)}' instead.";
+        @return($convert-this);
     }
 }
 

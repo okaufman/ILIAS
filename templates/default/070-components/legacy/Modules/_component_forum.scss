@@ -33,7 +33,7 @@ blockquote.ilForumQuote {
 div.ilForumQuoteHead {
 	font-weight: $il-font-weight-bold;
 	font-size: $il-font-size-small;
-	margin: 0 0 $il-margin-xxlarge-vertical;
+	margin: 0 0 $il-margin-xlarge-vertical;
 }
 
 /* Modules/Forum */
@@ -50,12 +50,12 @@ div.ilForumQuoteHead {
 	overflow: hidden;
 	img {
 		vertical-align: top;
-		margin: $il-margin-xlarge-vertical $il-margin-xxxlarge-horizontal $il-margin-xlarge-vertical $il-margin-small-horizontal;
+		margin: $il-margin-large-vertical $il-margin-xlarge-horizontal $il-margin-large-vertical $il-margin-small-horizontal;
 		border: none;
 		max-width: 100%;
 		@media only screen and (min-width: $il-grid-float-breakpoint) {
 			margin: 0 !important;
-			padding: $il-padding-large-vertical $il-padding-base-horizontal $il-padding-xlarge-vertical $il-padding-small-horizontal;
+			padding: $il-padding-medium-vertical $il-padding-small-horizontal $il-padding-large-vertical $il-padding-small-horizontal;
 		}
 	}
 }
@@ -68,10 +68,10 @@ div.ilForumQuoteHead {
 }
 
 .ilFrmPostTitle {
-	margin-top: $il-margin-xxxlarge-vertical;
+	margin-top: $il-margin-xlarge-vertical;
 	font-size: $il-font-size-large;
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
-		margin-top: $il-margin-large-vertical;
+		margin-top: $il-margin-medium-vertical;
 		font-size: $il-font-size-base;
 	}
 }
@@ -81,7 +81,7 @@ div.ilFrmPostHeader span.small {
 }
 
 .ilFrmPostContentContainer {
-	margin: 0 0 $il-margin-base-vertical;
+	margin: 0 0 $il-margin-small-vertical;
 	width: 80%;
 	float: left;
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
@@ -97,7 +97,7 @@ div.ilFrmPostHeader span.small {
 }
 
 .ilFrmTargetImage {
-	margin: 0 0 $il-margin-xxxlarge-vertical;
+	margin: 0 0 $il-margin-xlarge-vertical;
 	height: auto !important;
 
 	img {
@@ -118,12 +118,12 @@ div.ilFrmPostHeader span.small {
 }
 
 .ilFrmPostContent {
-	margin-top: $il-margin-xxxlarge-vertical;
+	margin-top: $il-margin-xlarge-vertical;
 }
 
 li.ilFrmPostRow {
-	padding: $il-padding-base-vertical 0 $il-padding-small-vertical $il-padding-xs-horizontal;
-	margin-bottom: $il-margin-xxxlarge-vertical;
+	padding: $il-padding-small-vertical 0 $il-padding-small-vertical $il-padding-xs-horizontal;
+	margin-bottom: $il-margin-xlarge-vertical;
 	border-left: $il-posting-left-border-width solid $il-main-border-color;
 
 	&.tblrowmarked{
@@ -194,7 +194,7 @@ li.ilFrmPostRow {
 }
 
 .ilFrmPostAttachmentsContainer {
-	margin: $il-margin-xxxlarge-vertical 0 0;
+	margin: $il-margin-xlarge-vertical 0 0;
 	font-weight: $il-font-weight-bold;
 	a {
 		font-weight: $il-font-weight-base;
@@ -218,7 +218,7 @@ li.ilPostingNeedsActivation {
 }
 
 .ilFrmBottomToolbar {
-	margin-top: $il-margin-xxxlarge-vertical;
+	margin-top: $il-margin-xlarge-vertical;
 }
 
 .ilForumTreeTitle {

@@ -9,12 +9,12 @@
 
 .ui-input-file-input-dropzone {
 	border: $il-dropzone-border-width $il-dropzone-border-style $il-dropzone-border-color;
-	padding: $il-padding-base-vertical $il-padding-base-horizontal;
+	padding: $il-padding-small-vertical $il-padding-small-horizontal;
 }
 
 .ui-input-file-input-dropzone button {
 	font-size: $il-font-size-base;
-	margin-left: $il-margin-base;
+	margin-left: $il-margin-medium-horizontal;
 }
 
 .ui-input-file-input-error-msg {
@@ -31,24 +31,24 @@
 
 .ui-input-file-input {
 	border: $il-input-file-info-container-border-width $il-input-file-info-container-border-style $il-input-file-info-container-border-color;
-	margin-bottom: $il-margin-large-vertical;
-	padding: $il-padding-base;
+	margin-bottom: $il-margin-medium-vertical;
+	padding: $il-padding-medium-horizontal;
 }
 
 .ui-input-file-input span {
 	font-size: $il-font-size-base;
 	&[data-action="collapse"], [data-file-action="expand"] {
-		margin: $il-margin-base 0;
+		margin: $il-margin-medium-horizontal 0;
 	}
 	&[data-action="remove"] .glyph {
-		margin-left: $il-margin-base;
+		margin-left: $il-margin-medium-horizontal;
 		float: right;
 	}
 	&[data-dz-name] {
-		margin-right: $il-margin-base;
+		margin-right: $il-margin-medium-horizontal;
 	}
 	&[data-dz-size] {
-		margin-right: $il-margin-base;
+		margin-right: $il-margin-medium-horizontal;
 		font-style: italic;
 	}
 }
@@ -56,10 +56,10 @@
 .ui-input-file-input-progress-container {
 	height: $il-input-file-progress-height;
 	background-color: $il-input-file-progress-base-color;
-	margin-top: $il-padding-base-horizontal;
-	margin-bottom: -$il-padding-base-horizontal;
-	margin-left: -$il-padding-base-horizontal;
-	margin-right: -$il-padding-base-horizontal;
+	margin-top: $il-padding-small-horizontal;
+	margin-bottom: -$il-padding-small-horizontal;
+	margin-left: -$il-padding-small-horizontal;
+	margin-right: -$il-padding-small-horizontal;
 
 	.ui-input-file-input-progress-indicator {
 		background-color: $il-input-file-progress-indicator-color;

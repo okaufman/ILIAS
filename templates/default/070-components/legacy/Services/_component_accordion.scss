@@ -6,7 +6,7 @@
 /* Services/Accordion */
 
 .il_VAccordionHead, .il_HAccordionHead {
-	padding: $il-padding-base-horizontal $il-padding-base-horizontal $il-padding-base-horizontal ($il-padding-base-horizontal+30px);
+	padding: $il-padding-small-horizontal $il-padding-small-horizontal $il-padding-small-horizontal ($il-padding-small-horizontal+30px);
 	text-align: left;
 	cursor: pointer;
 	color: $il-link-color;
@@ -14,7 +14,7 @@
 	background-image: url("#{$il-background-images-path}nav/tree_col.svg");
 	background-repeat: no-repeat;
 	background-color: $il-main-dark-bg;
-	background-position: $il-padding-xlarge-horizontal $il-padding-xlarge-vertical;
+	background-position: $il-padding-large-horizontal $il-padding-large-vertical;
 	background-size: 20px 20px;
 	border: 0;
 	&:hover {
@@ -29,14 +29,14 @@
 
 .il_VAccordionInnerContainer {
 	border: $il-panel-border;
-	margin-bottom: $il-margin-xxlarge-vertical;
+	margin-bottom: $il-margin-xlarge-vertical;
 	border-radius: $il-panel-border-radius;
 }
 
 .il_VAccordionContent, .il_HAccordionContent {
-	padding-top: $il-padding-xlarge-vertical;
+	padding-top: $il-padding-large-vertical;
 	>.c-form.c-form--horizontal {
-		padding: 0px $il-padding-xlarge-horizontal;
+		padding: 0px $il-padding-large-horizontal;
 	}
 }
 .il_HAccordionHeadActive, .il_VAccordionHeadActive {

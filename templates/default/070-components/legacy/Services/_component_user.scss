@@ -7,13 +7,13 @@ div.ilProfile {
 	max-width: 450px;
 	margin: 0 auto;
 	background-color: $il-main-dark-bg;
-	padding: $il-padding-xxxlarge-vertical;
+	padding: $il-padding-xlarge-vertical;
 	+ div.ilProfile {
-		margin-top: $il-margin-xxxlarge-vertical;
+		margin-top: $il-margin-xlarge-vertical;
 	}
 
 	+ div.ilPermalinkContainer {
-		margin-top: $il-padding-xxxlarge-vertical;
+		margin-top: $il-padding-xlarge-vertical;
 		.input-group-btn {
 			vertical-align: bottom;
 		}
@@ -25,20 +25,20 @@ img.ilProfileImage {
 }
 
 h3.ilProfileName {
-	margin: 0 0 $il-margin-xlarge-vertical;
+	margin: 0 0 $il-margin-large-vertical;
 	padding: 0;
 	font-weight: $il-font-weight-base;
 	font-size: $il-font-size-xlarge;
 }
 
 div.ilProfileSection {
-	margin-top: $il-padding-xxxlarge-vertical;
+	margin-top: $il-padding-xlarge-vertical;
 	font-size: $il-font-size-small;
 	color: $il-text-light-color;
 }
 
 h3.ilProfileSectionHead {
-	margin: 0 0 $il-margin-base-vertical;
+	margin: 0 0 $il-margin-small-vertical;
 	padding: 0;
 	font-weight: $il-font-weight-base;
 	font-size: $il-font-size-large;

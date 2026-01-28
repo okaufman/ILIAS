@@ -35,7 +35,7 @@
 
 	&-grid__item {
 		height: auto;
-		padding: $il-padding-large-vertical $il-padding-large-horizontal;
+		padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 		--l-bar__element__margin-bottom: 0;
 	}
 
@@ -45,7 +45,7 @@
 	}
 
 	& ul li {
-		padding: $il-padding-large-vertical 0 0 0;
+		padding: $il-padding-medium-vertical 0 0 0;
 	}
 
 	@include brk.on-screen-size(large) {
@@ -61,7 +61,7 @@
 			grid-template-columns: repeat(1, 1fr);
 		}
 		& ul li {
-			padding: $il-padding-large-vertical 0 0 0;
+			padding: $il-padding-medium-vertical 0 0 0;
 		}
 	}
 }

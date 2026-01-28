@@ -11,7 +11,7 @@
 //##
 $il-card-background: $il-main-bg;
 $il-card-highlight-bg: $il-warning-color;
-$il-card-highlight-height: $il-padding-large-vertical;
+$il-card-highlight-height: $il-padding-medium-vertical;
 $il-card-list-key-color: $il-text-light-color;
 $il-card-repository-dropdown-border: $il-main-border-color 1px solid;
 $il-card-repository-outlined-icon-filter: brightness(3);
@@ -23,7 +23,7 @@ $il-card-border: $il-panel-border;
 $il-card-border-radius: 0;
 
 .il-card {
-	padding: 0 0 $il-padding-large-vertical 0;
+	padding: 0 0 $il-padding-medium-vertical 0;
 	width: 100%;
 	position:relative;
 	background-color: $il-card-background;
@@ -80,14 +80,14 @@ $il-card-border-radius: 0;
 	}
 
 	.caption{
-		padding: $il-padding-large-vertical $il-padding-base-horizontal;
+		padding: $il-padding-medium-vertical $il-padding-small-horizontal;
 
 		//See #28508
 		overflow-wrap: break-word;
 		word-break: break-word;
 
 		h5{
-			margin:$il-margin-large-vertical 0 0 0;
+			margin:$il-margin-medium-vertical 0 0 0;
 		}
 
 
@@ -95,17 +95,17 @@ $il-card-border-radius: 0;
 			dt{
 				font-weight: $il-font-weight-base;
 				color: $il-text-light-color;
-				padding-top: $il-padding-large-vertical;
+				padding-top: $il-padding-medium-vertical;
 			}
 		}
 	}
 
 	.il-card-repository-head{
-		height: calc($il-icon-size-medium + $il-padding-large-horizontal);
+		height: calc($il-icon-size-medium + $il-padding-medium-horizontal);
 		padding: 0 $il-padding-small-horizontal;
 
 		> div {
-			padding: $il-padding-large-vertical $il-padding-small-horizontal;
+			padding: $il-padding-medium-vertical $il-padding-small-horizontal;
 			float: left;
 		}
 
@@ -125,7 +125,7 @@ $il-card-border-radius: 0;
 
 		> div.il-card-repository-dropdown {
 			float:right;
-			padding: ($il-padding-large-vertical + $il-padding-base-vertical) $il-padding-small-horizontal;
+			padding: ($il-padding-medium-vertical + $il-padding-small-vertical) $il-padding-small-horizontal;
 
 			> .dropdown {
 				> button {
@@ -133,8 +133,8 @@ $il-card-border-radius: 0;
 					z-index: 1;
 					background-color: inherit;
 					border: $il-card-repository-dropdown-border;
-					width: calc($il-icon-size-medium - $il-padding-large-vertical);
-					height: calc($il-icon-size-medium - $il-padding-large-vertical);
+					width: calc($il-icon-size-medium - $il-padding-medium-vertical);
+					height: calc($il-icon-size-medium - $il-padding-medium-vertical);
 
 					span.caret {
 						display: block;

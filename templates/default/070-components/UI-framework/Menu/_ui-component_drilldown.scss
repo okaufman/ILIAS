@@ -11,8 +11,8 @@
 //
 //##
 $c-drilldown-header-height: l-spage.$il-mainbar-btn-height;
-$c-drilldown-spacing-vertical: l.$il-padding-large-vertical;
-$c-drilldown-spacing-horizontal: l.$il-padding-large-horizontal;
+$c-drilldown-spacing-vertical: l.$il-padding-medium-vertical;
+$c-drilldown-spacing-horizontal: l.$il-padding-medium-horizontal;
 $c-drilldown-element-max-height: button.$input-min-height-large;
 $c-drilldown-min-height: button.$input-min-height-large * 6;
 $c-drilldown-menulevel-bg: $il-bulky-bg-color;
@@ -23,7 +23,7 @@ $c-drilldown-item-hover-bg: $c-drilldown-engaged-bg;
 $c-drilldown-item-font-size: $il-bulky-label-size;
 $c-drilldown-item-spacing: l-spage.$il-slate-content-spacing;
 $c-drilldown-item-font-line-height: $il-bulky-label-size * 1.133333333333333; // line-height of slate bulky btn/link
-$c-drilldown-left-indent: l.$il-padding-large-horizontal + s-symbol.$il-icon-size-small + math.div(l.$il-padding-large-horizontal, 2);
+$c-drilldown-left-indent: l.$il-padding-medium-horizontal + s-symbol.$il-icon-size-small + math.div(l.$il-padding-medium-horizontal, 2);
 $c-drilldown-selected-bg: $il-bulky-bg-color-engaged;
 $c-drilldown-menulevel-trigger-bg: transparent;
 
@@ -52,7 +52,7 @@ $c-drilldown-menulevel-trigger-bg: transparent;
         min-height: $c-drilldown-header-height;
         // content is centered by flex-box, not through padding
         margin-bottom: $c-drilldown-item-spacing;
-        padding: l.$il-padding-xlarge-vertical l.$il-padding-xlarge-horizontal l.$il-padding-xlarge-vertical $c-drilldown-left-indent;
+        padding: l.$il-padding-large-vertical l.$il-padding-large-horizontal l.$il-padding-large-vertical $c-drilldown-left-indent;
         box-shadow: none;
         z-index: initial;
         // so slate can cover up this specific header

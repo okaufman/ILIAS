@@ -2,7 +2,7 @@
 @use "../../../050-layout/layout_breakpoints" as *;
 @use "../../../050-layout/basics" as *;
 
-$table-cell-padding: $il-padding-base-horizontal;
+$table-cell-padding: $il-padding-small-horizontal;
 $table-condensed-cell-padding: $il-padding-small-horizontal;
 $table-border-color: $il-main-border-color;
 $table-bg-accent: $il-main-bg; // striped tables legacy were styled back to be un-striped tables
@@ -50,9 +50,9 @@ caption {
 th {
     text-align: left;
 }
-  
+
   // Baseline styles
-  
+
   .table {
 	width: 100%;
 	max-width: 100%;
@@ -91,16 +91,16 @@ th {
 	> tbody + tbody {
 	  border-top: 2px solid $table-border-color;
 	}
-  
+
 	// Nesting
 	.table {
 	  background-color: $il-main-bg;
 	}
   }
-  
-  
+
+
   // Condensed table w/ half padding
-  
+
   .table-condensed {
 	> thead,
 	> tbody,
@@ -113,38 +113,38 @@ th {
 	  }
 	}
   }
-  
+
   // Zebra-striping
   //
   // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-  
+
   .table-striped {
 	> tbody > tr:nth-of-type(odd) {
 	  background-color: $table-bg-accent;
 	}
   }
-  
+
   // Responsive tables
   //
   // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
   // by enabling horizontal scrolling. Only applies <768px. Everything above that
   // will display normally.
-  
+
   .table-responsive {
 	min-height: .01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
 	overflow-x: auto;
-  
+
 	@media screen and (max-width: $screen-xs-max) {
 	  width: 100%;
 	  margin-bottom: ($il-line-height-computed * .75);
 	  overflow-y: hidden;
 	  -ms-overflow-style: -ms-autohiding-scrollbar;
 	  border: 1px solid $table-border-color;
-  
+
 	  // Tighten up spacing
 	  > .table {
 		margin-bottom: 0;
-  
+
 		// Ensure the content doesn't wrap
 		> thead,
 		> tbody,
@@ -159,7 +159,7 @@ th {
 	  }
 	}
   }
-  
+
 
 // end of section based on bootstrap 3
 
@@ -175,8 +175,8 @@ div.tblfooter {
 
 div.ilTableNav {
 	font-weight: $il-font-weight-base;
-	margin-bottom: $il-margin-large-vertical;
-	padding: 0 $il-padding-xlarge-horizontal;
+	margin-bottom: $il-margin-medium-vertical;
+	padding: 0 $il-padding-large-horizontal;
 	font-size: $il-font-size-xsmall;
 	text-align: right;
 
@@ -226,10 +226,10 @@ div.ilTableHeaderTitleBlock {
 }
 
 div.ilTableHeaderTitle {
-	margin: $il-padding-xxlarge-vertical 0 0 $il-padding-xlarge-horizontal;
+	margin: $il-padding-xlarge-vertical 0 0 $il-padding-large-horizontal;
 	padding: 0;
 	+ .ilHeaderDesc {
-		margin: 0 $il-padding-xlarge-horizontal $il-padding-xlarge-vertical;
+		margin: 0 $il-padding-large-horizontal $il-padding-large-vertical;
 	}
 }
 
@@ -252,7 +252,7 @@ div.ilTableOuter {
 
 div.ilTableSelectAll {
 	background-color: $il-main-bg;
-	padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
+	padding: $il-padding-medium-vertical $il-padding-large-horizontal;
 	font-size: $il-font-size-small;
 	border-top: 1px solid $il-main-border-color;
 }
@@ -263,7 +263,7 @@ div.ilTableSelectAll label {
 
 div.ilTableCommandRow, div.ilTableCommandRowTop {
 	background-color: $il-table-cmd-bg;
-	padding: $il-padding-large-vertical $il-padding-large-horizontal;
+	padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 	font-size: $il-font-size-small;
 }
 
@@ -272,7 +272,7 @@ span.ilTableFootLight {
 }
 
 div.ilTableFilterActivator {
-	margin: 0 0 $il-padding-large-vertical $il-padding-large-horizontal;
+	margin: 0 0 $il-padding-medium-vertical $il-padding-medium-horizontal;
 }
 
 .ilTableMenuItem {
@@ -281,28 +281,28 @@ div.ilTableFilterActivator {
 
 
 div.ilTableFilter {
-	padding: 0 0 $il-padding-large-vertical 0;
+	padding: 0 0 $il-padding-medium-vertical 0;
 	margin: 0;
 }
 
 legend.ilTableFilter {
 	font-size: $il-font-size-xsmall;
 	border: none;
-	padding: 0 $il-padding-xlarge-horizontal;
+	padding: 0 $il-padding-large-horizontal;
 	margin: 0;
 	font-weight: $il-font-weight-base;
 	text-align: right;
 	> a.btn {
-		margin-right: -$il-padding-xlarge-horizontal;
-		margin-top: -$il-margin-xxlarge-vertical ;
+		margin-right: -$il-padding-large-horizontal;
+		margin-top: -$il-margin-xlarge-vertical ;
 		vertical-align: middle;
 	}
 }
 
 fieldset.ilTableFilter {
 	background-color: $il-main-dark-bg;
-	padding: $il-margin-xxlarge-vertical $il-padding-xlarge-horizontal;
-	margin:  $il-margin-large-vertical 0 $il-padding-xlarge-horizontal 0;
+	padding: $il-margin-xlarge-vertical $il-padding-large-horizontal;
+	margin:  $il-margin-medium-vertical 0 $il-padding-large-horizontal 0;
 }
 
 div.ilTableFilterLabel {
@@ -420,7 +420,7 @@ div.ilTableCommandRowTop {
 	tr {
 		td:first-child {
 			input[type="checkbox"] {
-				margin-left: calc($il-padding-xlarge-horizontal - $il-padding-base);
+				margin-left: calc($il-padding-large-horizontal - $il-padding-medium-horizontal);
 			}
 		}
 	}

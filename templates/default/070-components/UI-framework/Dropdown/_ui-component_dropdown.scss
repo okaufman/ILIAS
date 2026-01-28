@@ -70,7 +70,7 @@ $cursor-disabled: not-allowed !default;
 	overflow: auto;
 	min-width: 200px;
 	max-height: 50vh;
-	padding: l.$il-padding-large-vertical 0;
+	padding: l.$il-padding-medium-vertical 0;
 	margin: l.$il-margin-small-vertical 0 0; // override default ul
 	font-size: s.$il-font-size-base;
 	text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
@@ -103,12 +103,12 @@ $cursor-disabled: not-allowed !default;
 	  @include t-ndiv.nav-divider($dropdown-divider-bg);
 	}
 	hr {
-		margin: l.$il-margin-large-vertical 0;
+		margin: l.$il-margin-medium-vertical 0;
 	}
 
 	// Use some dropdown menu styles for ul in the field selection element only
 	> .dropdown-menu-list {
-		padding: l.$il-padding-large-vertical 0;
+		padding: l.$il-padding-medium-vertical 0;
 		margin: l.$il-margin-small-vertical 0 0; // override default ul
 		text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
 		list-style-type: none;
@@ -259,7 +259,7 @@ $cursor-disabled: not-allowed !default;
 		color: $dropdown-link-color;
 		min-height: s-form.$il-input-min-height;
 		width: 100%;
-		padding: l.$il-padding-small-vertical l.$il-padding-xlarge-horizontal;
+		padding: l.$il-padding-small-vertical l.$il-padding-large-horizontal;
 		justify-content: start;
 		white-space: nowrap;
 		&:hover,
@@ -303,7 +303,7 @@ $cursor-disabled: not-allowed !default;
 //##
 
 .dropdown h4 {
-	margin: l.$il-margin-base-vertical 0;
+	margin: l.$il-margin-small-vertical 0;
 }
 
 //Note, this is a rather nasty fix for #27751

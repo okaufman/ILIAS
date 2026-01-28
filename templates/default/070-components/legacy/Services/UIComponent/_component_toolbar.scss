@@ -15,13 +15,13 @@
 //== Toolbar
 //
 //##
-$nav-link-padding: $il-padding-large-vertical $il-padding-large-horizontal !default;
+$nav-link-padding: $il-padding-medium-vertical $il-padding-medium-horizontal !default;
 $nav-link-hover-bg: $il-main-darker-bg !default;
 $nav-disabled-link-color: $il-main-dark-bg !default;
 $nav-disabled-link-hover-color: $il-main-dark-bg !default;
 $cursor-disabled: not-allowed !default;
 
-$il-toolbar-margin: $il-margin-xlarge-horizontal !default;
+$il-toolbar-margin: $il-margin-large-horizontal !default;
 $il-toolbar-bg: $il-main-dark-bg !default;
 $il-toolbar-border: 1px solid $il-main-border-color !default;
 
@@ -110,13 +110,13 @@ $il-toolbar-border: 1px solid $il-main-border-color !default;
 
 
 .c-toolbar {
-	padding: $il-padding-xlarge-vertical $il-padding-xlarge-horizontal;
+	padding: $il-padding-small-vertical $il-padding-small-horizontal;
 	background-color: $il-toolbar-bg;
-	margin-bottom: $il-padding-xxxlarge-vertical;
+	margin-bottom: $il-padding-xlarge-vertical;
 	.ilToolbarSeparator {
 		border-left: $il-toolbar-border;
 		align-self: stretch;
-		margin-bottom: $il-padding-xlarge-vertical;
+		margin-bottom: $il-padding-large-vertical;
 	}
 	.navbar-form > .form-control {
 		width: auto;

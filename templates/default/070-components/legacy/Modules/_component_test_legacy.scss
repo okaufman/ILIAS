@@ -133,10 +133,10 @@ div.ilc_Question {
 	padding: 0.25em;
 	margin-top: 1em;
 
-	padding: $il-padding-xxlarge-horizontal;
+	padding: $il-padding-xlarge-horizontal;
 	.row.ilc_qanswer_Answer {
-		padding-left: $il-padding-xxlarge-horizontal;
-		padding-right: $il-padding-xxlarge-horizontal;
+		padding-left: $il-padding-xlarge-horizontal;
+		padding-right: $il-padding-xlarge-horizontal;
 	}
 }
 
@@ -580,8 +580,8 @@ div.ilc_Page.readonly textarea[disabled]
 {
 	position:fixed;
 	z-index:99999999999;
-	top:$il-margin-xlarge-vertical;
-	right:$il-margin-xlarge-horizontal;
+	top:$il-margin-large-vertical;
+	right:$il-margin-large-horizontal;
 	box-shadow: $il-shadow--large;
 	&:empty {
 		display: none;

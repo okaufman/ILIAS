@@ -75,8 +75,8 @@ a {
 	 * All skins which want to support mounting of Webfolders using Internet Explorer
 	 * must explicitly enable AnchorClick behavior.
 	 */
-	behavior: url(#default#AnchorClick);
-	/* END WebDAV: Enable links with AnchorClick behavior for Internet Explorer. */
+  behavior: url(#default#AnchorClick);
+  /* END WebDAV: Enable links with AnchorClick behavior for Internet Explorer. */
   &:hover,
   &:focus {
     color: $il-link-hover-color;
@@ -92,7 +92,7 @@ a {
 // Ex: math.div(12px small font, 14px base font) * 100% = about 85%
 small,
 .small, sub, sup {
-	
+
   font-size: $il-font-size-xsmall;
 }
 
@@ -180,46 +180,46 @@ address {
 }
 
 em, i {
-	font-style: italic;
+  font-style: italic;
 }
 
 u {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 sub {
-	vertical-align: sub;
+  vertical-align: sub;
 }
 
 sup {
-	vertical-align: super;
+  vertical-align: super;
 }
 
 /* see bug #15971 */
 sub, sup {
-	position: static;
+  position: static;
 }
 
 strong, b {
-	font-weight: $il-font-weight-bold;
+  font-weight: $il-font-weight-bold;
 }
 
 code {
-	font-family: Pragmata, Menlo, 'DejaVu LGC Sans Mono', 'DejaVu Sans Mono', Consolas, 'Everson Mono', 'Lucida Console', 'Andale Mono', 'Nimbus Mono L', 'Liberation Mono', FreeMono, 'Osaka Monospaced', Courier, 'New Courier', monospace;
-	font-size: $il-font-size-small;
-	color: $il-text-light-color;
+  font-family: Pragmata, Menlo, 'DejaVu LGC Sans Mono', 'DejaVu Sans Mono', Consolas, 'Everson Mono', 'Lucida Console', 'Andale Mono', 'Nimbus Mono L', 'Liberation Mono', FreeMono, 'Osaka Monospaced', Courier, 'New Courier', monospace;
+  font-size: $il-font-size-small;
+  color: $il-text-light-color;
 }
 
 ::selection {
-	background: lighten($il-main-color, 50%);
+  background: lighten($il-main-color, 50%);
 }
 
 ::-moz-selection {
-	background: lighten($il-main-color, 50%);
+  background: lighten($il-main-color, 50%);
 }
 
 @media print {
-	h1, h2, h3, h4, h5, h6 {
-		page-break-after: avoid;
-	}
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
 }

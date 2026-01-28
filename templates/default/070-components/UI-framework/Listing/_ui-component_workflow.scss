@@ -28,9 +28,9 @@ $il-workflow-unavailable-text-color: color.scale($il-text-color, $lightness: 30%
 		color: $il-text-color;
 		font-size: $il-font-size-xlarge;
 		font-weight: $il-font-weight-base;
-		margin-bottom:  $il-margin-large-vertical;
+		margin-bottom:  $il-margin-medium-vertical;
 		margin-top: 0;
-		padding: $il-padding-large-vertical $il-padding-large-horizontal;
+		padding: $il-padding-medium-vertical $il-padding-medium-horizontal;
 	}
 }
 .il-workflow-container {
@@ -153,7 +153,7 @@ $il-workflow-unavailable-text-color: color.scale($il-text-color, $lightness: 30%
 		color: $il-workflow-available-text-color;
 		font-size: $il-font-size-large;
 		font-weight: $il-font-weight-base;
-		margin-top: -($il-margin-large-vertical*0.5);
+		margin-top: -($il-margin-medium-vertical*0.5);
 	}
 }
 
@@ -180,6 +180,6 @@ $il-workflow-unavailable-text-color: color.scale($il-text-color, $lightness: 30%
 	}
 
 	.il-workflow-container {
-		padding: $il-padding-xxxlarge-vertical $il-padding-xlarge-horizontal;
+		padding: $il-padding-xlarge-vertical $il-padding-large-horizontal;
 	}
 }

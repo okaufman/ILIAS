@@ -19,8 +19,8 @@
 		border: $il-dropzone-bulky-border-width $il-dropzone-bulky-border-style $il-dropzone-bulky-border-color;
 		border-radius: $il-dropzone-bulky-border-radius;
 		background-color: $il-main-dark-bg;
-		padding-top: $il-padding-xxlarge-horizontal;
-		padding-bottom: $il-padding-xxlarge-horizontal;
+		padding-top: $il-padding-xlarge-horizontal;
+		padding-bottom: $il-padding-xlarge-horizontal;
 	}
 }
 
@@ -42,7 +42,7 @@
 .ui-dropzone-message {
 	font-size: $il-font-size-base;
 	float: right;
-	margin-right: $il-padding-large-horizontal;
+	margin-right: $il-padding-medium-horizontal;
 }
 
 .ui-dropzone .form-group {

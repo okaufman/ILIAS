@@ -20,7 +20,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding: $il-padding-base 0;
+    padding: $il-padding-medium-horizontal 0;
     background: none;
     border: none;
     width: 100%;
@@ -90,7 +90,7 @@
 
   &__message {
     font-size: $il-font-size-small;
-    padding: 0 0 $il-padding-base 0;
+    padding: 0 0 $il-padding-medium-horizontal 0;
     width: 100%;
 
     &::before {

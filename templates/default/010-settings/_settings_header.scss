@@ -1,9 +1,12 @@
 @use "./_settings_color-palette.scss" as s-color;
+@use "./settings_typography" as s-typo;
+@use "../030-tools/tool_scale-with-ratio" as t-scale;
+@use "../050-layout/basics" as l;
 
 //** header
-$il-standard-page-logo-height: 45px !default;
-$il-standard-page-logo-width: 45px !default;
-$il-standard-page-header-height: 60px !default;
+$il-standard-page-logo-height: t-scale.scale-with-ratio(l.$scale-ratio, 5, l.$spacing-base) !default;
+$il-standard-page-logo-width: t-scale.scale-with-ratio(l.$scale-ratio, 5, l.$spacing-base) !default;
+$il-standard-page-header-height: t-scale.scale-with-ratio(l.$scale-ratio, 6, l.$spacing-base) !default;
 $il-standard-page-header-bg-color: s-color.$il-main-bg !default;
 
 $il-standard-page-header-page-title-color: s-color.$il-text-color !default;

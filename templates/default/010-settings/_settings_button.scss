@@ -1,6 +1,8 @@
 @use "./_settings_color-palette.scss" as s-color;
 @use "./_settings_typography.scss" as s-typo;
 @use "./settings_borders" as s-border;
+@use "../050-layout/basics" as l;
+@use "./legacy-settings/legacy-settings_form" as s-form;
 
 //== Buttons
 //
@@ -35,8 +37,8 @@ $il-btn-ctrl-bg: s-color.$il-highlight-bg !default;
 //** Border color of the primary button (most important button on the screen)
 $il-btn-ctrl-border: s-color.$il-highlight-bg !default;
 $il-btn-ctrl-engaged-border: s-color.$il-link-color !default;
-$il-btn-ctrl-outer-height: 2.2rem !default;
-$il-btn-ctrl-inner-btn-height: 1.7rem !default;
+$il-btn-ctrl-outer-height: s-form.$il-input-min-height + 2 * l.$il-padding-xs-vertical !default;
+$il-btn-ctrl-inner-btn-height: s-form.$il-input-min-height !default;
 
 //** Colors of inactive buttons
 $il-disabled-btn-color: darken(s-color.$il-text-color, 20%) !default;

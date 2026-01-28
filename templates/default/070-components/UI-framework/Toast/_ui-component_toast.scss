@@ -5,7 +5,7 @@
 //
 //##
 $il-toast-container-top: $il-standard-page-header-height;
-$il-toast-margin-right: $il-margin-xlarge-horizontal;
+$il-toast-margin-right: $il-margin-large-horizontal;
 $il-toast-horizontal-division: 20px 1fr 20px;
 $il-toast-transition: all .25s ease-in-out;
 $il-toast-width: 300px;
@@ -34,7 +34,7 @@ $il-toast-shadow: 3px 9px 9px 0 rgb(0 0 0 / 0.3);
     margin-top: $il-margin-small-vertical;
     margin-bottom: $il-line-height-computed;
     margin-right: $il-toast-margin-right;
-    padding: $il-padding-base;
+    padding: $il-padding-medium-horizontal;
     background-color: white;
     display: grid;
     grid-template-areas:
@@ -42,7 +42,7 @@ $il-toast-shadow: 3px 9px 9px 0 rgb(0 0 0 / 0.3);
     "none description description"
     "none actions actions";
     grid-template-columns: $il-toast-horizontal-division;
-    grid-gap: $il-padding-base;
+    grid-gap: $il-padding-medium-horizontal;
     box-shadow: $il-toast-shadow;
     transform: translateX(150%);
     transition: $il-toast-transition;
